@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--
+<!-- 
 Template Name: AdminUX-Pro - Responsive Admin Dashboard Template build with Bootstrap 4.3.1
 Version: 1.0.0
 Author: Maxartkiller
@@ -35,11 +35,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <link href="../resources/assets/vendor/flags/css/flag-icon.min.css" rel="stylesheet">
     <!-- daterange picker -->
     <link href="../resources/assets/vendor/daterangepicker-master/daterangepicker.css" rel="stylesheet">
-    <!-- dataTables picker -->
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/responsive.dataTables.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/fixedHeader.dataTables.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/fixedColumns.bootstrap4.min.css" rel="stylesheet">
+    <!-- dropzone js -->
+    <link href="../resources/assets/vendor/dropzone-master/dist/dropzone.css" rel="stylesheet">
 
     <!-- Vendor or 3rd party style ends -->
 
@@ -57,8 +54,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <div class="row h-100">
         <div class="col-auto align-self-center  mx-auto text-center">
             <div class="loader-ripple"><div></div><div></div></div>
-            <h2>AdminuxPRO</h2>
-            <p>HTML Template</p>
+            <h2>AQUATWIN LOADING</h2>
+            <p>Please Waiting...</p>
         </div>
     </div>
 </div>
@@ -241,7 +238,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                 <div class="nav-item"><a class="nav-link" href="multiselect.html"><span>Multiselect</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="context-menu.html"><span>Context Menu</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="autocomplete.html"><span>Auto Complete</span></a></div>
-                <div class="nav-item"><a class="nav-link" href="wizard.html"><span>Wizards</span></a></div>
+
                 <div class="nav-item"><a class="nav-link" href="treeview.html"><span>Tree View</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="editor.html"><span>Editor</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="dropzone.html"><span>Dropzone</span></a></div>
@@ -607,7 +604,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                                                             <div class="row">
                                                                 <div class="col-auto">
                                                                     <div class="timeline-circle-wrap">
-                                                                        <div class="timeline-circle border-warning"><span class="bg-warning ml-2"></span></div>
+                                                                        <div class="timeline-circle border-warning"><span class="bg-warning"></span></div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col pl-0">
@@ -620,7 +617,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                                                             <div class="row">
                                                                 <div class="col-auto">
                                                                     <div class="timeline-circle-wrap">
-                                                                        <div class="timeline-circle border-danger"><span class="bg-danger ml-1"></span></div>
+                                                                        <div class="timeline-circle border-danger"><span class="bg-danger"></span></div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col pl-0">
@@ -778,7 +775,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="material-icons">email</i>
-                                            <span class="counter bg-danger ml-1">1</span>
+                                            <span class="counter bg-danger">1</span>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-sm-left dropdown-menu-center no-defaults pt-0 overflow-hidden" aria-labelledby="navbarDropdown5">
                                             <div class="position-relative text-center rounded">
@@ -1013,136 +1010,132 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                     </div>
                 </div>
             </div>
-            <div class="row submenu">
-                <div class="container-fluid " id="submenu-container">
-                    <div class="row">
-                        <!-- Submenu section starts -->
-                        <nav class="navbar col-12 ">
-                            <div class="dropdown mr-auto d-flex d-sm-none">
-                                <button class="btn dropdown-toggle btn-sm btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dashboard
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Dashboard</a>
-                                    <a class="dropdown-item" href="#">Featured</a>
-                                    <a class="dropdown-item" href="#">popular</a>
-                                </div>
-                            </div>
-                            <ul class="nav nav-pills mr-auto d-none d-sm-flex">
-                                <li class="nav-item ">
-                                    <a class="nav-link active" href="#">Dashboard</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Featured</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">popular</a>
-                                </li>
-                            </ul>
-                            <ul class="nav nav-pills ml-auto d-none d-xl-flex">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Today</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">This week</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">This Month</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline ml-auto ml-sm-3">
-                                <div id="daterangeadminux" class="form-control form-control-sm">
-                                    <span></span> <i class="material-icons avatar avatar-26 text-template-primary cal-icon">event</i>
-                                </div>
-
-                            </form>
-                        </nav>
-                        <!-- Submenu section ends -->
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Main container starts -->
         <div class="container main-container" id="main-container">
-            <div class="card border-0 shadow-sm mb-4">
-                <div class="card-header border-0 bg-none">
-                    <div class="row">
-                        <div class="col-12 col-md">
-                            <p class="fs15">어가일지</p>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 mx-auto align-self-center">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10 mx-auto">
+                                    <div class="row ">
+                                        <div class="col-lg-12 col-md-12 text-center">
+                                            <h1 class="mt-4">어가일지 상세</h1>
+                                            <p class="text-mute">어가일지 상세 정보를 확인 수정이 가능합니다</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>사업장</label>
+                                            <select class="form-control">
+                                                <option>- 사업장은 선택해주세요 -</option>
+                                                <option selected="selected">비디</option>
+                                                <option>아쿠아</option>
+                                                <option>태평양 양식</option>
+                                                <option>대서양 양식</option>
+                                                <option>좋은 물고기</option>
+                                                <option>굿피시</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>수조 선택</label>
+                                            <select class="form-control">
+                                                <option>- 수조를 선택해 주세요 -</option>
+                                                <option selected="selected">수조 (대)</option>
+                                                <option>수조 (중)</option>
+                                                <option>수조 (소)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>일차</label>
+                                            <input type="number" class="form-control" value="32" placeholder="몇 일차인지 입력">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>작성일자</label>
+                                            <input type="text" class="form-control datepicker">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-3 col-md-3">
+                                            <label>용존산소</label>
+                                            <input type="text" class="form-control" value="5.8"  placeholder="용존산소">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <label>수온</label>
+                                            <input type="text" class="form-control"  value="23.4" placeholder="수온">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <label>PH</label>
+                                            <input type="text" class="form-control"  value="0.23" placeholder="PH">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <label>수용마리수</label>
+                                            <input type="number" class="form-control"  value="2457" placeholder="수용마리수">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-3 col-md-3">
+                                            <label>페사 마리수</label>
+                                            <input type="number" class="form-control" value="4" placeholder="페사 마리수">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <label>페사 무게(g)</label>
+                                            <input type="text" class="form-control" value="109.2"  placeholder="페사 무게(g)">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3">
+                                            <label>공급 사료량(Kg)/label>
+                                            <input type="text" class="form-control" value="3.15"  placeholder="공급 사료량">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-12 col-md-12">
+                                          <label for="exampleFormControlTextarea2">비고</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea2" style="resize: none;" rows="2">산소가 부족한것 같아서 산소 넣어줌!</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-12 col-md-12">
+                                            <label>태그 (,)로 구분</label>
+                                            <input type="text" class="form-control"  value="선별1,수온조절" placeholder="태그">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="custom-control custom-radio d-inline-block mr-3">
+                                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                                                <label class="custom-control-label" for="credit">사용</label>
+                                            </div>
+                                            <div class="custom-control custom-radio d-inline-block mr-3">
+                                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                                <label class="custom-control-label" for="debit">사용안함</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>등록일</label>
+                                            <div>2022-11-07 15:00</div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>마지막 수정일</label>
+                                            <div>2022-11-07 15:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-auto align-self-center">
-                            <button class="btn btn-sm btn-outline-template ml-2" onclick="location.href='../resources/assets/excel/어가일지_20221108.xlsx'" >
-                                <i class="material-icons md-18">cloud_download</i>엑셀다운로드
-                            </button>
+                        <div class="card-footer">
+                            <button class="btn btn-primary float-right  ml-3" onclick="location.href='fishJournal.html'">수정</button>
+                            <button class="btn btn-outline-primary float-right" onclick="location.href='fishJournal.html'">취소</button>
+                            <button class="btn btn-outline-primary" onclick="location.href='fishJournal.html'">삭제</button>
                         </div>
                     </div>
                 </div>
-                <div class="card-body ">
-                    <table class="table datatable display responsive w-100">
-                        <thead>
-                        <tr>
-                            <th class="all">No</th>
-                            <th class="min-desktop">사업자</th>
-                            <th class="min-desktop">수조</th>
-                            <th class="min-desktop">일차</th>
-                            <th class="min-tablet">용존산소</th>
-                            <th class="min-tablet">수온</th>
-                            <th class="min-tablet">PH</th>
-                            <th class="all">수용마리수</th>
-                            <th class="min-tablet">페사마리수</th>
-                            <th class="min-desktop">페사무게</th>
-                            <th class="min-desktop">공급사료량</th>
-                            <th class="all">태그</th>
-                            <th class="min-desktop">등록일</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	1	</td><td>	비디	</td><td> <p class="mb-0 template-inverse">	수조 (대)	</p></td><td>	0	</td>  <td>	4.8	</td>  <td>	21.5	</td>  <td>	0.23	</td>  <td>	2457	</td>  <td>	3	</td>  <td>	81.9	</td>  <td>	3.1	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-0 template-inverse">	2022-06-03	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	2	</td><td>	비디	</td><td> <p class="mb-1 template-inverse">	수조 (대)	</p></td><td>	1	</td>  <td>	5.8	</td>  <td>	23.4	</td>  <td>	0.23	</td>  <td>	2453	</td>  <td>	4	</td>  <td>	109.2	</td>  <td>	3.15	</td><td><span class="badge badge-success vm">	선별1	</span><span class="badge badge-danger vm ml-2">	수온조절			</span></td><td><p class="mb-1 template-inverse">	2022-06-04	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	3	</td><td>	비디	</td><td> <p class="mb-2 template-inverse">	수조 (대)	</p></td><td>	2	</td>  <td>	3.7	</td>  <td>	22.8	</td>  <td>	0.24	</td>  <td>	2448	</td>  <td>	13	</td>  <td>	137.3	</td>  <td>	3.5	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-2 template-inverse">	2022-06-05	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	4	</td><td>	비디	</td><td> <p class="mb-3 template-inverse">	수조 (대)	</p></td><td>	3	</td>  <td>	3.2	</td>  <td>	21.4	</td>  <td>	0.13	</td>  <td>	2443	</td>  <td>	14	</td>  <td>	301.2	</td>  <td>	5.5	</td><td><span class="badge badge-success vm">	선별1	</span><span class="badge badge-danger vm ml-2">	물교체			</span></td><td><p class="mb-3 template-inverse">	2022-06-06	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	5	</td><td>	비디	</td><td> <p class="mb-4 template-inverse">	수조 (대)	</p></td><td>	4	</td>  <td>	5.32	</td>  <td>	21.3	</td>  <td>	0.13	</td>  <td>	2443	</td>  <td>	22	</td>  <td>	424.5	</td>  <td>	6.48	</td><td><span class="badge badge-success vm">	선별1	</span><span class="badge badge-danger vm ml-2">	산소추가			</span></td><td><p class="mb-4 template-inverse">	2022-06-07	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	6	</td><td>	비디	</td><td> <p class="mb-5 template-inverse">	수조 (대)	</p></td><td>	5	</td>  <td>	5.91	</td>  <td>	21.1	</td>  <td>	0.15	</td>  <td>	2441	</td>  <td>	17	</td>  <td>	371.2	</td>  <td>	6.4	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-5 template-inverse">	2022-06-08	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	7	</td><td>	비디	</td><td> <p class="mb-6 template-inverse">	수조 (대)	</p></td><td>	6	</td>  <td>	5.97	</td>  <td>	21.4	</td>  <td>	0.16	</td>  <td>	2441	</td>  <td>	5	</td>  <td>	95.3	</td>  <td>	6.35	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-6 template-inverse">	2022-06-09	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	8	</td><td>	비디	</td><td> <p class="mb-7 template-inverse">	수조 (대)	</p></td><td>	7	</td>  <td>	5.92	</td>  <td>	21.3	</td>  <td>	0.17	</td>  <td>	2439	</td>  <td>	5	</td>  <td>	122.9	</td>  <td>	4.4	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-7 template-inverse">	2022-06-10	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	9	</td><td>	비디	</td><td> <p class="mb-8 template-inverse">	수조 (대)	</p></td><td>	8	</td>  <td>	5.42	</td>  <td>	22.3	</td>  <td>	0.19	</td>  <td>	2436	</td>  <td>	5	</td>  <td>	113.5	</td>  <td>	5.24	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-8 template-inverse">	2022-06-11	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	10	</td><td>	비디	</td><td> <p class="mb-9 template-inverse">	수조 (대)	</p></td><td>	9	</td>  <td>	4.56	</td>  <td>	21.6	</td>  <td>	0.22	</td>  <td>	2434	</td>  <td>	0	</td>  <td>	0	</td>  <td>	4.977	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-9 template-inverse">	2022-06-12	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	11	</td><td>	비디	</td><td> <p class="mb-10 template-inverse">	수조 (대)	</p></td><td>	10	</td>  <td>	5.12	</td>  <td>	22.8	</td>  <td>	0.23	</td>  <td>	2434	</td>  <td>	3	</td>  <td>	63.5	</td>  <td>	5.114	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-10 template-inverse">	2022-06-13	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	12	</td><td>	비디	</td><td> <p class="mb-11 template-inverse">	수조 (대)	</p></td><td>	11	</td>  <td>	5.63	</td>  <td>	22	</td>  <td>	0.23	</td>  <td>	2434	</td>  <td>	0	</td>  <td>	0	</td>  <td>	7.403	</td><td><span class="badge badge-success vm">	선별1	</span><span class="badge badge-danger vm ml-2">	산소추가			</span></td><td><p class="mb-11 template-inverse">	2022-06-14	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	13	</td><td>	비디	</td><td> <p class="mb-12 template-inverse">	수조 (대)	</p></td><td>	12	</td>  <td>	6	</td>  <td>	21.3	</td>  <td>	0.25	</td>  <td>	2431	</td>  <td>	33	</td>  <td>	160	</td>  <td>	7.8	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-12 template-inverse">	2022-06-15	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	14	</td><td>	비디	</td><td> <p class="mb-13 template-inverse">	수조 (대)	</p></td><td>	13	</td>  <td>	5.57	</td>  <td>	20.7	</td>  <td>	0.27	</td>  <td>	2429	</td>  <td>	23	</td>  <td>	237.7	</td>  <td>	5	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-13 template-inverse">	2022-06-16	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	15	</td><td>	비디	</td><td> <p class="mb-14 template-inverse">	수조 (대)	</p></td><td>	14	</td>  <td>	6.07	</td>  <td>	21.9	</td>  <td>	0.27	</td>  <td>	2427	</td>  <td>	5	</td>  <td>	177.4	</td>  <td>	4	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-14 template-inverse">	2022-06-17	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	16	</td><td>	비디	</td><td> <p class="mb-15 template-inverse">	수조 (대)	</p></td><td>	15	</td>  <td>	5.74	</td>  <td>	21.8	</td>  <td>	0.31	</td>  <td>	2427	</td>  <td>	1	</td>  <td>	30.3	</td>  <td>	3.5	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-15 template-inverse">	2022-06-18	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	17	</td><td>	비디	</td><td> <p class="mb-16 template-inverse">	수조 (대)	</p></td><td>	16	</td>  <td>	5.8	</td>  <td>	22	</td>  <td>	0.31	</td>  <td>	2426	</td>  <td>	3	</td>  <td>	138.4	</td>  <td>	7	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-16 template-inverse">	2022-06-19	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	18	</td><td>	비디	</td><td> <p class="mb-17 template-inverse">	수조 (대)	</p></td><td>	17	</td>  <td>	3.7	</td>  <td>	22	</td>  <td>	0.33	</td>  <td>	2425	</td>  <td>	3	</td>  <td>	127.7	</td>  <td>	8.6	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-17 template-inverse">	2022-06-20	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	19	</td><td>	비디	</td><td> <p class="mb-18 template-inverse">	수조 (대)	</p></td><td>	18	</td>  <td>	3.2	</td>  <td>	22.7	</td>  <td>	0.12	</td>  <td>	2425	</td>  <td>	3	</td>  <td>	118.2	</td>  <td>	8.3	</td><td><span class="badge badge-success vm">	선별1	</span><span class="badge badge-danger vm ml-2">	물교체	</span><span class="badge badge-warning vm ml-2">	산소추가	</span></td><td><p class="mb-18 template-inverse">	2022-06-21	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	20	</td><td>	비디	</td><td> <p class="mb-19 template-inverse">	수조 (대)	</p></td><td>	19	</td>  <td>	5.32	</td>  <td>	23.1	</td>  <td>	0.13	</td>  <td>	2423	</td>  <td>	6	</td>  <td>	276	</td>  <td>	7.3	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-19 template-inverse">	2022-06-22	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	21	</td><td>	비디	</td><td> <p class="mb-20 template-inverse">	수조 (대)	</p></td><td>	20	</td>  <td>	5.91	</td>  <td>	23.1	</td>  <td>	0.13	</td>  <td>	2422	</td>  <td>	0	</td>  <td>	0	</td>  <td>	5.2	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-20 template-inverse">	2022-06-23	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	22	</td><td>	비디	</td><td> <p class="mb-21 template-inverse">	수조 (대)	</p></td><td>	21	</td>  <td>	5.97	</td>  <td>	23.8	</td>  <td>	0.15	</td>  <td>	2422	</td>  <td>	1	</td>  <td>	35.8	</td>  <td>	5.3	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-21 template-inverse">	2022-06-24	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	23	</td><td>	비디	</td><td> <p class="mb-22 template-inverse">	수조 (대)	</p></td><td>	22	</td>  <td>	5.92	</td>  <td>	24.7	</td>  <td>	0.16	</td>  <td>	2422	</td>  <td>	3	</td>  <td>	136.4	</td>  <td>	4.3	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-22 template-inverse">	2022-06-25	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	24	</td><td>	비디	</td><td> <p class="mb-23 template-inverse">	수조 (대)	</p></td><td>	23	</td>  <td>	5.42	</td>  <td>	23.2	</td>  <td>	0.17	</td>  <td>	2421	</td>  <td>	0	</td>  <td>	0	</td>  <td>	6.8	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-23 template-inverse">	2022-06-26	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	25	</td><td>	비디	</td><td> <p class="mb-24 template-inverse">	수조 (대)	</p></td><td>	24	</td>  <td>	4.56	</td>  <td>	23.5	</td>  <td>	0.19	</td>  <td>	2416	</td>  <td>	2	</td>  <td>	65.2	</td>  <td>	6.8	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-24 template-inverse">	2022-06-27	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	26	</td><td>	비디	</td><td> <p class="mb-25 template-inverse">	수조 (대)	</p></td><td>	25	</td>  <td>	5.12	</td>  <td>	23.7	</td>  <td>	0.22	</td>  <td>	2416	</td>  <td>	2	</td>  <td>	61.8	</td>  <td>	7	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-25 template-inverse">	2022-06-28	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	27	</td><td>	비디	</td><td> <p class="mb-26 template-inverse">	수조 (대)	</p></td><td>	26	</td>  <td>	5.63	</td>  <td>	23.9	</td>  <td>	0.23	</td>  <td>	2414	</td>  <td>	0	</td>  <td>	0	</td>  <td>	7.2	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-26 template-inverse">	2022-06-29	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	28	</td><td>	비디	</td><td> <p class="mb-27 template-inverse">	수조 (대)	</p></td><td>	27	</td>  <td>	6	</td>  <td>	23.9	</td>  <td>	0.23	</td>  <td>	2407	</td>  <td>	1	</td>  <td>	42.7	</td>  <td>	7.2	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-27 template-inverse">	2022-06-30	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	29	</td><td>	비디	</td><td> <p class="mb-28 template-inverse">	수조 (대)	</p></td><td>	28	</td>  <td>	5.57	</td>  <td>	24.5	</td>  <td>	0.25	</td>  <td>	2404	</td>  <td>	2	</td>  <td>	66.3	</td>  <td>	7	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-28 template-inverse">	2022-07-01	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	30	</td><td>	비디	</td><td> <p class="mb-29 template-inverse">	수조 (대)	</p></td><td>	29	</td>  <td>	6.07	</td>  <td>	24.5	</td>  <td>	0.27	</td>  <td>	2400	</td>  <td>	14	</td>  <td>	694.9	</td>  <td>	7.9	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-29 template-inverse">	2022-07-02	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	31	</td><td>	비디	</td><td> <p class="mb-30 template-inverse">	수조 (대)	</p></td><td>	30	</td>  <td>	5.8	</td>  <td>	24.3	</td>  <td>	0.27	</td>  <td>	2270	</td>  <td>	1	</td>  <td>	58.5	</td>  <td>	8.3	</td><td><span class="badge badge-success vm">	선별1	</span><span class="badge badge-danger vm ml-2">	물교체			</span></td><td><p class="mb-30 template-inverse">	2022-07-03	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	32	</td><td>	비디	</td><td> <p class="mb-31 template-inverse">	수조 (대)	</p></td><td>	31	</td>  <td>	3.7	</td>  <td>	24.2	</td>  <td>	0.31	</td>  <td>	2267	</td>  <td>	2	</td>  <td>	152	</td>  <td>	7.4	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-31 template-inverse">	2022-07-04	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	33	</td><td>	비디	</td><td> <p class="mb-32 template-inverse">	수조 (대)	</p></td><td>	32	</td>  <td>	3.2	</td>  <td>	23.7	</td>  <td>	0.31	</td>  <td>	2267	</td>  <td>	8	</td>  <td>	383.7	</td>  <td>	7.8	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-32 template-inverse">	2022-07-05	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	34	</td><td>	비디	</td><td> <p class="mb-33 template-inverse">	수조 (대)	</p></td><td>	33	</td>  <td>	5.32	</td>  <td>	23.6	</td>  <td>	0.33	</td>  <td>	2267	</td>  <td>	8	</td>  <td>	354.9	</td>  <td>	6.6	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-33 template-inverse">	2022-07-06	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	35	</td><td>	비디	</td><td> <p class="mb-34 template-inverse">	수조 (대)	</p></td><td>	34	</td>  <td>	5.91	</td>  <td>	23	</td>  <td>	0.33	</td>  <td>	2267	</td>  <td>	13	</td>  <td>	590	</td>  <td>	8.4	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-34 template-inverse">	2022-07-07	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	36	</td><td>	비디	</td><td> <p class="mb-35 template-inverse">	수조 (대)	</p></td><td>	35	</td>  <td>	5.97	</td>  <td>	24.8	</td>  <td>	0.33	</td>  <td>	2267	</td>  <td>	0	</td>  <td>	0	</td>  <td>	3.4	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-35 template-inverse">	2022-07-08	</p> </td><td></td></tr>
-                        <tr onclick="location.href='modifyFishJournal.html'"><td>	37	</td><td>	비디	</td><td> <p class="mb-36 template-inverse">	수조 (대)	</p></td><td>	36	</td>  <td>	5.92	</td>  <td>	22.8	</td>  <td>	0.33	</td>  <td>	2267	</td>  <td>	6	</td>  <td>	339.5	</td>  <td>	7.4	</td><td><span class="badge badge-success vm">	선별1					</span></td><td><p class="mb-36 template-inverse">	2022-07-09	</p> </td><td></td></tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="card-footer mb-5">
-                <button class="btn btn-primary float-right" onclick="location.href='createFishJournal.html'">신규 등록</button>
             </div>
         </div>
         <!-- Main container ends -->
@@ -1278,7 +1271,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 
 <!-- Theme style picker modal window and options -->
 <div class="wrap-fixed-float wrap-fixed-bottom-right">
-    <button class="btn btn-primary btn-rounded-circle shadow" data-target="#themepicker" data-toggle="modal"><i class="material-icons vm">style</i><span class="counter-small bg-danger ml-1"></span></button>
+    <button class="btn btn-primary btn-rounded-circle shadow" data-target="#themepicker" data-toggle="modal"><i class="material-icons vm">style</i><span class="counter-small bg-danger"></span></button>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="themepicker" tabindex="-1" role="dialog" aria-hidden="true">
@@ -1502,12 +1495,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <!-- date range picker -->
 <script src="../resources/assets/vendor/daterangepicker-master/moment.min.js"></script>
 <script src="../resources/assets/vendor/daterangepicker-master/daterangepicker.js"></script>
-<!-- DataTables js  -->
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.responsive.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.fixedHeader.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.fixedColumns.min.js"></script>
+<!-- dropzone.js  -->
+<script src="../resources/assets/vendor/dropzone-master/dropzone.js"></script>
 
 <!-- Vendor or 3rd party js ends -->
 
@@ -1522,35 +1511,36 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <!-- Customized page level js -->
 <script>
     'use strict'
-    $(document).ready(function() {
-        /* data Table */
-        $('.datatable').DataTable({
-            'responsive': true,
-            'searching': true,
-            "bLengthChange": true,
-            "select":true,
-            paging: true,
-            "pageLength": 10,
-            "columnDefs": [{
-                "targets": 5,
-                "orderable": false
-            }],
-            language: {
-                emptyTable: "데이터가 없습니다.",
-                lengthMenu: "페이지당 _MENU_ 개씩 보기",
-                info: "현재 _START_ - _END_ / _TOTAL_건",
-                infoEmpty: "데이터 없음",
-                infoFiltered: "( _MAX_건의 데이터에서 필터링됨 )",
-                search: "검색 ",
-                zeroRecords: "일치하는 데이터가 없습니다.",
-                loadingRecords: "로딩중...",
-                processing: "잠시만 기다려 주세요.",
-                paginate: {
-                    next: "다음",
-                    previous: "이전",
-                },
-            },
+    $(window).on('load', function() {
+        $("#my-dropzone").dropzone({
+            url: "../file-upload",
+            addRemoveLinks: "dictRemoveFile"
         });
+
+        $('.datepicker').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            drops: 'up',
+            minYear: 2010
+        }, function(start, end, label) {
+            $('.datepicker').val( start.format('YYYY-MM-DD'));
+        });
+
+        $('.datepicker').on('show.daterangepicker', function(ev, picker) {
+            var thisdp = $('.daterangepicker');
+            setTimeout(function() {
+                thisdp.addClass('active');
+            }, 100);
+        });
+        $('.datepicker').on('hide.daterangepicker', function(ev, picker) {
+            var thisdpc = $('.daterangepicker');
+            thisdpc.removeClass('active');
+
+        });
+        var path = '../assets/img/background-part.png';
+        if ($('.daterangepicker .background').length == 0) {
+            $('.daterangepicker').append('<div class="background" style="background-image: url(' + path + '); z-index:-1; height:80px;"><img src="../resources/assets/img/background-part.png" alt="" style="display:none"></div>');
+        }
     });
 
 </script>
