@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--
+<!-- 
 Template Name: AdminUX-Pro - Responsive Admin Dashboard Template build with Bootstrap 4.3.1
 Version: 1.0.0
 Author: Maxartkiller
@@ -35,11 +35,11 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <link href="../resources/assets/vendor/flags/css/flag-icon.min.css" rel="stylesheet">
     <!-- daterange picker -->
     <link href="../resources/assets/vendor/daterangepicker-master/daterangepicker.css" rel="stylesheet">
-    <!-- dataTables picker -->
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/responsive.dataTables.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/fixedHeader.dataTables.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/fixedColumns.bootstrap4.min.css" rel="stylesheet">
+    <!-- Multiselect picker -->
+    <link href="../resources/assets/vendor/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet">
+
+    <!-- dropzone js -->
+    <link href="../resources/assets/vendor/dropzone-master/dist/dropzone.css" rel="stylesheet">
 
     <!-- Vendor or 3rd party style ends -->
 
@@ -57,8 +57,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <div class="row h-100">
         <div class="col-auto align-self-center  mx-auto text-center">
             <div class="loader-ripple"><div></div><div></div></div>
-            <h2>AdminuxPRO</h2>
-            <p>HTML Template</p>
+            <h2>AQUATWIN LOADING</h2>
+            <p>Please Waiting...</p>
         </div>
     </div>
 </div>
@@ -241,7 +241,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                 <div class="nav-item"><a class="nav-link" href="multiselect.html"><span>Multiselect</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="context-menu.html"><span>Context Menu</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="autocomplete.html"><span>Auto Complete</span></a></div>
-                <div class="nav-item"><a class="nav-link" href="wizard.html"><span>Wizards</span></a></div>
+
                 <div class="nav-item"><a class="nav-link" href="treeview.html"><span>Tree View</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="editor.html"><span>Editor</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="dropzone.html"><span>Dropzone</span></a></div>
@@ -1013,111 +1013,225 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                     </div>
                 </div>
             </div>
-            <div class="row submenu">
-                <div class="container-fluid " id="submenu-container">
-                    <div class="row">
-                        <!-- Submenu section starts -->
-                        <nav class="navbar col-12 ">
-                            <div class="dropdown mr-auto d-flex d-sm-none">
-                                <button class="btn dropdown-toggle btn-sm btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dashboard
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Dashboard</a>
-                                    <a class="dropdown-item" href="#">Featured</a>
-                                    <a class="dropdown-item" href="#">popular</a>
-                                </div>
-                            </div>
-                            <ul class="nav nav-pills mr-auto d-none d-sm-flex">
-                                <li class="nav-item ">
-                                    <a class="nav-link active" href="#">Dashboard</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Featured</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">popular</a>
-                                </li>
-                            </ul>
-                            <ul class="nav nav-pills ml-auto d-none d-xl-flex">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Today</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">This week</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">This Month</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline ml-auto ml-sm-3">
-                                <div id="daterangeadminux" class="form-control form-control-sm">
-                                    <span></span> <i class="material-icons avatar avatar-26 text-template-primary cal-icon">event</i>
-                                </div>
-
-                            </form>
-                        </nav>
-                        <!-- Submenu section ends -->
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Main container starts -->
         <div class="container main-container" id="main-container">
-            <div class="card border-0 shadow-sm mb-4">
-                <div class="card-header border-0 bg-none">
-                    <div class="row">
-                        <div class="col-12 col-md">
-                            <p class="fs15">수조 현황</p>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 mx-auto align-self-center">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10 mx-auto">
+
+                                    <div class="row ">
+                                        <div class="col-lg-12 col-md-12 text-center">
+                                            <h1 class="mt-4">수조 상세 정보</h1>
+                                            <p class="text-mute">수조 상세 정보 학인 및 수정이 가능합니다</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>수조ID</label>
+                                            <div>W0002</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>사업장</label>
+                                            <select class="form-control">
+                                                <option hidden>- 사업장을 선택해주세요 -</option>
+                                                <option selected>비디</option>
+                                                <option>아쿠아</option>
+                                                <option>태평양 양식</option>
+                                                <option>대서양 양식</option>
+                                                <option>좋은 물고기</option>
+                                                <option>굿피시</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>수조 명</label>
+                                            <input type="text" class="form-control" value="수조 (대)" placeholder="수조명을 입력해 주세요">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>어종</label>
+                                                <select class="selectpicker form-control"  title="- 어종을 선택해 주세요 -"  multiple data-live-search="true" data-style="form-control">
+                                                        <option selected data-tokens="">	물가자미	</option>
+                                                        <option data-tokens="">	가름가자미	</option>
+                                                        <option data-tokens="">	도다리	</option>
+                                                        <option data-tokens="">	용가자미	</option>
+                                                        <option selected data-tokens="">	광어	</option>
+                                                        <option data-tokens="">	참가자미	</option>
+                                                        <option data-tokens="">	가자미	</option>
+                                                        <option data-tokens="">	황다랑어	</option>
+                                                        <option data-tokens="">	가다랑어	</option>
+                                                        <option data-tokens="">	날개다랑어	</option>
+                                                        <option data-tokens="">	망치고등어	</option>
+                                                        <option data-tokens="">	태평양고등어	</option>
+                                                        <option data-tokens="">	참치	</option>
+                                                        <option data-tokens="">	참돔	</option>
+                                                        <option data-tokens="">	흑돔	</option>
+                                                        <option selected data-tokens="">	붉돔	</option>
+                                                        <option data-tokens="">	옥돔	</option>
+                                                        <option data-tokens="">	긴꼬리벵에돔	</option>
+                                                        <option data-tokens="">	금눈돔	</option>
+                                                        <option data-tokens="">	백미돔	</option>
+                                                        <option data-tokens="">	황돔	</option>
+                                                        <option data-tokens="">	뱅어돔	</option>
+                                                        <option data-tokens="">	청돔	</option>
+                                                        <option data-tokens="">	감성돔	</option>
+                                                        <option data-tokens="">	자리돔	</option>
+                                                        <option data-tokens="">	참조기	</option>
+                                                        <option data-tokens="">	민어	</option>
+                                                        <option data-tokens="">	숭어	</option>
+                                                        <option data-tokens="">	참숭어	</option>
+                                                        <option data-tokens="">	우럭(조피볼락)	</option>
+                                                        <option data-tokens="">	파랑볼우럭	</option>
+                                                        <option data-tokens="">	민물농어	</option>
+                                                        <option data-tokens="">	장어	</option>
+                                                        <option data-tokens="">	민물장어	</option>
+                                                </select>
+                                            </div>
+                                    </div>
+                                    <div class="form-group row mt-5">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>계측기 모델</label>
+                                            <select class="form-control" >
+                                                <option hidden>- 모델을 선택해 주세요 -</option>
+                                                <option selected>CTB80</option>
+                                                <option>CTB85</option>
+                                                <option>CTB91</option>
+                                                <option>MW600</option>
+                                                <option>MW700</option>
+                                                <option>HI98127</option>
+                                                <option>HI98128</option>
+                                                <option>MW800</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>시리얼 코드</label>
+                                            <input type="text" class="form-control" value="RE2-88KJ2-MX1J1" placeholder="시리얼 코드를 입력해 주세요">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>계측기 설치일</label>
+                                            <input type="date"  class="form-control" value="2021-04-11" />
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>계측기 교쳬 예정일자</label>
+                                            <input type="date"  class="form-control" value="2024-04-11" />
+                                        </div>
+                                    </div>
+                                    <div  id="addCencorDiv">
+                                        <div class="form-group row ml-3">
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>센서 모델</label>
+                                                <select class="form-control" >
+                                                    <option hidden>- 센서 모델을 선택해 주세요 -</option>
+                                                    <option selected>SATB80</option>
+                                                    <option>SQCTB85</option>
+                                                    <option>SSCTB91</option>
+                                                    <option>SSMW600</option>
+                                                    <option>S1MW700</option>
+                                                    <option>S2HI98127</option>
+                                                    <option>S3HI98128</option>
+                                                    <option>S3MW800</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>센서 명</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="센서명" value="SA 용존 산소 센서" aria-label="Recipient's username">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-primary" type="button" onclick="addNewSensor();">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row ml-3">
+                                            <div class="col-lg-6 col-md-6">
+                                                <select class="form-control" >
+                                                    <option hidden>- 센서 모델을 선택해 주세요 -</option>
+                                                    <option>SATB80</option>
+                                                    <option selected>SQCTB85</option>
+                                                    <option>SSCTB91</option>
+                                                    <option>SSMW600</option>
+                                                    <option>S1MW700</option>
+                                                    <option>S2HI98127</option>
+                                                    <option>S3HI98128</option>
+                                                    <option>S3MW800</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="센서명" value="PH 센서" aria-label="Recipient's username">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-danger deleteSensor" type="button">-</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row ml-3">
+                                            <div class="col-lg-6 col-md-6">
+                                                <select class="form-control" >
+                                                    <option hidden>- 센서 모델을 선택해 주세요 -</option>
+                                                    <option>SATB80</option>
+                                                    <option>SQCTB85</option>
+                                                    <option>SSCTB91</option>
+                                                    <option>SSMW600</option>
+                                                    <option>S1MW700</option>
+                                                    <option selected>S2HI98127</option>
+                                                    <option>S3HI98128</option>
+                                                    <option>S3MW800</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="센서명" value="수온센서" aria-label="Recipient's username">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-danger deleteSensor" type="button">-</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="custom-control custom-radio d-inline-block mr-3">
+                                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                                                <label class="custom-control-label" for="credit">사용</label>
+                                            </div>
+                                            <div class="custom-control custom-radio d-inline-block mr-3">
+                                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                                <label class="custom-control-label" for="debit">사용안함</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>등록일</label>
+                                            <div>2012-04-15 17:53</div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>마지막 수정일</label>
+                                            <div>2022-11-07 15:00</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-auto align-self-center">
-                            <button class="btn btn-sm btn-outline-template ml-2" onclick="location.href='../resources/assets/excel/수조현황_20221108.xlsx'">
-                                <i class="material-icons md-18">cloud_download</i> 엑셀다운로드
-                            </button>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary" onclick="location.href='waterTankStatus.html'">삭제</button>
+                            <button class="btn btn-primary float-right  ml-3" onclick="location.href='waterTankStatus.html'">수정</button>
+                            <button class="btn btn-outline-primary float-right" onclick="location.href='waterTankStatus.html'">목록</button>
                         </div>
                     </div>
                 </div>
-                <div class="card-body ">
-                    <table class="table datatable display responsive w-100">
-                        <thead>
-                        <tr>
-                            <th class="all">수조ID</th>
-                            <th class="min-tablet">사업자명</th>
-                            <th class="all">수조명</th>
-                            <th class="min-tablet">어종</th>
-                            <th class="min-desktop">등록 계측기 개수</th>
-                            <th class="min-desktop">등록 센서 개수</th>
-                            <th class="">사용여부</th>
-                            <th class="min-desktop">등록일</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0001	</td><td><p class="mb-0 template-inverse">	비디	</p></td><td>	수조 (대)	</td> <td><p class="text-template-primary-light">	광어,고등어,넙치	</p></td><td>	3	</td><td>	5	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2020-05-11	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0002	</td><td><p class="mb-0 template-inverse">	비디	</p></td><td>	수조 (중)	</td> <td><p class="text-template-primary-light">	물가자미,용가자미	</p></td><td>	2	</td><td>	3	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2020-05-11	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0003	</td><td><p class="mb-0 template-inverse">	비디	</p></td><td>	수조 (소)	</td> <td><p class="text-template-primary-light">	옥돔	</p></td><td>	1	</td><td>	2	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2019-12-01	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0004	</td><td><p class="mb-0 template-inverse">	아쿠아	</p></td><td>	수조1	</td> <td><p class="text-template-primary-light">	붉돔,옥돔	</p></td><td>	3	</td><td>	4	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2021-07-29	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0005	</td><td><p class="mb-0 template-inverse">	아쿠아	</p></td><td>	수조2	</td> <td><p class="text-template-primary-light">	광어	</p></td><td>	1	</td><td>	2	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2021-07-29	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0006	</td><td><p class="mb-0 template-inverse">	아쿠아	</p></td><td>	신규수조	</td> <td><p class="text-template-primary-light">	감성돔,청돔	</p></td><td>	1	</td><td>	3	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2021-07-29	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0007	</td><td><p class="mb-0 template-inverse">	아쿠아	</p></td><td>	대형수조1	</td> <td><p class="text-template-primary-light">	장어	</p></td><td>	4	</td><td>	2	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2022-10-30	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0008	</td><td><p class="mb-0 template-inverse">	태평양 양식	</p></td><td>	태평양A	</td> <td><p class="text-template-primary-light">	민물장어	</p></td><td>	3	</td><td>	3	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2019-12-17	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0009	</td><td><p class="mb-0 template-inverse">	태평양 양식	</p></td><td>	태평양B	</td> <td><p class="text-template-primary-light">	광어,옥돔	</p></td><td>	2	</td><td>	3	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2019-12-17	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0010	</td><td><p class="mb-0 template-inverse">	대서양 양식	</p></td><td>	01	</td> <td><p class="text-template-primary-light">	광어	</p></td><td>	1	</td><td>	3	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2020-05-11	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0011	</td><td><p class="mb-0 template-inverse">	대서양 양식	</p></td><td>	02	</td> <td><p class="text-template-primary-light">	옥돔,붉돔,흑돔	</p></td><td>	4	</td><td>	4	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2020-05-11	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0012	</td><td><p class="mb-0 template-inverse">	대서양 양식	</p></td><td>	03	</td> <td><p class="text-template-primary-light">	장어	</p></td><td>	2	</td><td>	5	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2019-12-01	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0013	</td><td><p class="mb-0 template-inverse">	대서양 양식	</p></td><td>	04	</td> <td><p class="text-template-primary-light">	감성돔	</p></td><td>	2	</td><td>	3	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2021-07-29	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0014	</td><td><p class="mb-0 template-inverse">	좋은 물고기	</p></td><td>	수조 1	</td> <td><p class="text-template-primary-light">	광어,물가자미	</p></td><td>	3	</td><td>	3	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2021-07-29	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0015	</td><td><p class="mb-0 template-inverse">	좋은 물고기	</p></td><td>	수조 2	</td> <td><p class="text-template-primary-light">	옥돔	</p></td><td>	2	</td><td>	2	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2021-07-29	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0016	</td><td><p class="mb-0 template-inverse">	굿 피시	</p></td><td>	수조 (소)	</td> <td><p class="text-template-primary-light">	붉돔,옥돔	</p></td><td>	2	</td><td>	3	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2022-10-30	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0017	</td><td><p class="mb-0 template-inverse">	굿 피시	</p></td><td>	수조 (중)	</td> <td><p class="text-template-primary-light">	광어	</p></td><td>	1	</td><td>	4	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2019-12-17	</td><td></td></tr>
-                        <tr onclick="location.href='modifyWaterTank.html'"><td>	W0018	</td><td><p class="mb-0 template-inverse">	굿 피시	</p></td><td>	수조 (대)	</td> <td><p class="text-template-primary-light">	감성돔,청돔	</p></td><td>	1	</td><td>	3	</td><td><div class="btn-success btn btn-sm">	사용	</div></td><td>	2019-12-17	</td><td></td></tr>
-
-                        </tbody>
-                    </table>
-                </div>
             </div>
-
         </div>
         <!-- Main container ends -->
 
@@ -1468,20 +1582,19 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <!-- Global js mandatory -->
 <script src="../resources/assets/js/jquery-3.3.1.min.js"></script>
 <script src="../resources/assets/js/popper.min.js"></script>
-<script src="../resources/assets/vendor/bootstrap/js/bootstrap.min.js"></script><script src="../resources/assets/vendor/cookie/jquery.cookie.js"></script>
+<script src="../resources/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../resources/assets/vendor/cookie/jquery.cookie.js"></script>
 <!-- Global js ends -->
 
 <!-- Vendor or 3rd party js -->
 
+<!-- Multiselect -->
+<script src="../resources/assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
 <!-- date range picker -->
 <script src="../resources/assets/vendor/daterangepicker-master/moment.min.js"></script>
 <script src="../resources/assets/vendor/daterangepicker-master/daterangepicker.js"></script>
-<!-- DataTables js  -->
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.responsive.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.fixedHeader.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.fixedColumns.min.js"></script>
+<!-- dropzone.js  -->
+<script src="../resources/assets/vendor/dropzone-master/dropzone.js"></script>
 
 <!-- Vendor or 3rd party js ends -->
 
@@ -1494,39 +1607,52 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <!-- theme picker ends -->
 
 <!-- Customized page level js -->
+
 <script>
     'use strict'
-    $(document).ready(function() {
-        /* data Table */
-        $('.datatable').DataTable({
-            'responsive': true,
-            'searching': true,
-            "bLengthChange": true,
-            "pageLength": 10,
-            "columnDefs": [{
-                "targets": 5,
-                "orderable": false
-            }],
-            language: {
-                emptyTable: "데이터가 없습니다.",
-                lengthMenu: "페이지당 _MENU_ 개씩 보기",
-                info: "현재 _START_ - _END_ / _TOTAL_건",
-                infoEmpty: "데이터 없음",
-                infoFiltered: "( _MAX_건의 데이터에서 필터링됨 )",
-                search: "검색",
-                zeroRecords: "일치하는 데이터가 없습니다.",
-                loadingRecords: "로딩중...",
-                processing: "잠시만 기다려 주세요.",
-                paginate: {
-                    next: "다음",
-                    previous: "이전",
-                },
-            },
+    $(window).on('load', function() {
+        $('.selectpicker').selectpicker();
+        $('.selectpicker').on('shown.bs.select', function(e, clickedIndex, isSelected, previousValue) {
+            // do something...
+            $(this).next().addClass('active')
         });
-
-
+        $('.selectpicker').on('hide.bs.select', function(e, clickedIndex, isSelected, previousValue) {
+            // do something...
+            $(this).next().removeClass('active')
+        });
+        $('.deleteSensor').on('click',deleteSensor );
     });
 
+    function addNewSensor(){
+        $('#addCencorDiv').append(` <div class="form-group row ml-3">
+                                            <div class="col-lg-6 col-md-6">
+                                                <select class="form-control" >
+                                                    <option hidden>- 센서 모델을 선택해 주세요 -</option>
+                                                    <option>SATB80</option>
+                                                    <option>SQCTB85</option>
+                                                    <option>SSCTB91</option>
+                                                    <option>SSMW600</option>
+                                                    <option>S1MW700</option>
+                                                    <option>S2HI98127</option>
+                                                    <option>S3HI98128</option>
+                                                    <option>S3MW800</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="센서명" aria-label="Recipient's username">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-danger deleteSensor" type="button">-</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>`);
+            $('.deleteSensor').off('click');
+        $('.deleteSensor').on('click',deleteSensor );
+    };
+    function deleteSensor() {
+        $(this).parent().parent().parent().parent().remove();
+    }
 </script>
 <!-- Customized page level js ends -->
 </body>
