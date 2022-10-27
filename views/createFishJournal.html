@@ -1057,7 +1057,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <label>작성일자</label>
-                                            <input type="text" class="form-control datepicker">
+                                            <input type="date" class="form-control" value="2022-11-08">
                                         </div>
                                     </div>
                                     <div class="form-group row mt-4">
@@ -1502,35 +1502,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <script>
     'use strict'
     $(window).on('load', function() {
-        $("#my-dropzone").dropzone({
-            url: "../file-upload",
-            addRemoveLinks: "dictRemoveFile"
-        });
 
-        $('.datepicker').daterangepicker({
-            singleDatePicker: true,
-            showDropdowns: true,
-            drops: 'up',
-            minYear: 2010
-        }, function(start, end, label) {
-            $('.datepicker').val( start.format('YYYY-MM-DD'));
-        });
-
-        $('.datepicker').on('show.daterangepicker', function(ev, picker) {
-            var thisdp = $('.daterangepicker');
-            setTimeout(function() {
-                thisdp.addClass('active');
-            }, 100);
-        });
-        $('.datepicker').on('hide.daterangepicker', function(ev, picker) {
-            var thisdpc = $('.daterangepicker');
-            thisdpc.removeClass('active');
-
-        });
-        var path = '../assets/img/background-part.png';
-        if ($('.daterangepicker .background').length == 0) {
-            $('.daterangepicker').append('<div class="background" style="background-image: url(' + path + '); z-index:-1; height:80px;"><img src="../resources/assets/img/background-part.png" alt="" style="display:none"></div>');
-        }
     });
 
 </script>
