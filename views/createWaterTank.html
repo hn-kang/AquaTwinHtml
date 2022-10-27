@@ -1098,7 +1098,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                                                 </select>
                                             </div>
                                     </div>
-                                    <div class="form-group row mt-4">
+                                    <div class="form-group row mt-5">
                                         <div class="col-lg-6 col-md-6">
                                             <label>계측기 모델</label>
                                             <select class="form-control" >
@@ -1126,6 +1126,33 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                                         <div class="col-lg-6 col-md-6">
                                             <label>계측기 교쳬 예정일자</label>
                                             <input type="date"  class="form-control" value="2025-11-08" />
+                                        </div>
+                                    </div>
+                                    <div  id="addCencorDiv">
+                                        <div class="form-group row ml-3">
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>센서 모델</label>
+                                                <select class="form-control" >
+                                                    <option hidden>- 센서 모델을 선택해 주세요 -</option>
+                                                    <option>SATB80</option>
+                                                    <option>SQCTB85</option>
+                                                    <option>SSCTB91</option>
+                                                    <option>SSMW600</option>
+                                                    <option>S1MW700</option>
+                                                    <option>S2HI98127</option>
+                                                    <option>S3HI98128</option>
+                                                    <option>S3MW800</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <label>센서 명</label>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="센서명" aria-label="Recipient's username">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-primary" type="button" onclick="addNewSensor();">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -1540,6 +1567,37 @@ License: You must have a valid license purchased only from maxartkiller.com in o
         });
 
     });
+
+    function addNewSensor(){
+        $('#addCencorDiv').append(` <div class="form-group row ml-3">
+                                            <div class="col-lg-6 col-md-6">
+                                                <select class="form-control" >
+                                                    <option hidden>- 센서 모델을 선택해 주세요 -</option>
+                                                    <option>SATB80</option>
+                                                    <option>SQCTB85</option>
+                                                    <option>SSCTB91</option>
+                                                    <option>SSMW600</option>
+                                                    <option>S1MW700</option>
+                                                    <option>S2HI98127</option>
+                                                    <option>S3HI98128</option>
+                                                    <option>S3MW800</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6">
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control" placeholder="센서명" aria-label="Recipient's username">
+                                                    <div class="input-group-append">
+                                                        <button class="btn btn-outline-danger deleteSensor" type="button">-</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>`);
+            $('.deleteSensor').off('click');
+        $('.deleteSensor').on('click',deleteSensor );
+    };
+    function deleteSensor() {
+        $(this).parent().parent().parent().parent().remove();
+    }
 </script>
 <!-- Customized page level js ends -->
 </body>
