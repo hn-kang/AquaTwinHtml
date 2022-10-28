@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 
+<!--
 Template Name: AdminUX-Pro - Responsive Admin Dashboard Template build with Bootstrap 4.3.1
 Version: 1.0.0
 Author: Maxartkiller
@@ -1022,8 +1022,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                                 <div class="col-md-10 mx-auto">
                                     <div class="row ">
                                         <div class="col-lg-12 col-md-12 text-center">
-                                            <h1 class="mt-4">정보 신규 등록</h1>
-                                            <p class="text-mute">신규 등록할 정보를 입력해 주세요</p>
+                                            <h1 class="mt-4">공지 상세</h1>
+                                            <p class="text-mute">공지상세 내용 확인 및 수정이 가능합니다</p>
                                         </div>
                                     </div>
                                     <br>
@@ -1032,38 +1032,116 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                                             <label>분류</label>
                                             <select class="form-control">
                                                 <option hidden>- 분류를 선택해 주세요 -</option>
-                                                <option>News</option>
-                                                <option>Market</option>
-                                                <option>policy</option>
+                                                <option selected>공지</option>
+                                                <option>팝업 공지</option>
                                             </select>
                                         </div>
                                         <div class="col-lg-6 col-md-6">
                                             <label>썸네일 업로드</label>
                                             <input type="file" class="form-control" id="fileInput">
-                                            <h1 id="imageShow1" class="icon-circle icons icon-120 bg-light-primary text-primary mt-2"><i class="material-icons md-48 ">help_outline</i></h1>
-                                            <img id="imageShow2" class="mt-2"  src="../resources/assets/img/main/a_market_1.png" style="display: none;width: 120px; height: 120px;">
+                                            <img id="imageShow1" class="mt-2"  src="../resources/assets/img/main/1.배출수.jpg" style="width: 120px; height: 120px;">
+                                            <img id="imageShow2" class="mt-2"  src="../resources/assets/img/main/2.배합사료.jpg" style="display: none;width: 120px; height: 120px;">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-12 col-md-12 ">
                                             <label>제목</label>
-                                            <input type="text" class="form-control" placeholder="제목을 입력해 주세요">
+                                            <input type="text" class="form-control" value="사육수 배출수 처리시설 검토 결과" placeholder="제목을 입력해 주세요">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-12 col-md-12">
-                                          <label>내용</label>
-                                            <textarea class="form-control" rows="10" id="editor2"></textarea>
+                                            <label>내용</label>
+                                            <textarea class="form-control" rows="10" id="editor2">
+                                                육상수조식 양식시설에 있어 사육수의 배출수 처리시설은 수산업법 제 44조의 규정에 의거 수조면적 합계 500 m2 이상에 대해 현행은 수질환 경보전법 제30조의2제3항과 시행규칙에 따라 시행되었다.<br><br>
+○ 「오수·분뇨 및 축산폐수처리에 관한 법률 제25조의3제1항」의 규정에 의하면, 축산업자가 축산폐수배출시설 및 축산폐수처리시설을 양도하거나 사망한 경우 또는 법인의 합병이 있는 경우에는 그 양수인·상속인 또는 합병 후 존속하는 법인이나 합병에 의하여 설립되는 법인은 허가 또는 신고에 따른 축산업자의 권리·의무를 승계한다고 되어 있으나, 경매절차에 의하여 축산폐수배출시설 및 축산폐수처리시설의 전부를 취득한 경우에 대하여는 별도의 승계규정이 없는바, 당해 허가가 대물적인 경우에는 별도의 승계규정이 없다고 하더라도 승계된다는 것이 일반적 원칙이라고 할 것이므로, 이 건 승계여부에 대한 판단은 「동법 제24조의2」 및 「동법 시행령 제12조」의 규정에 의한 축산폐수배출시설 설치허가의 성질이 대물적 허가인지 여부에 달려 있다고 할 것입니다.<br><br>
+○ 「법 제24조의2」 및 「동법 시행령 제12조」의 규정에 의하면, 축산폐수배출시설의 설치허가를 받고자 하는 자는 시장·군수·구청장에게 축산폐수배출시설의 설치내역서, 가축사육두수와 오염물질의 배출량을 예측한 내역서, 축산폐수처리시설의 설치내역서와 그 도면 등을 제출하여야 하고, 허가신청서를 접수받은 허가권자는 축산폐수를 방류수수질기준 이하로 처리할 수 있는지 여부, 오염물질 배출량을 예측한 내역서의 정확성 여부, 초지 또는 농경지의 확보여부, 확보된 초지 또는 농경지가 다른 축산업자 등이 확보<br><br>
+한 초지 또는 농경지와 중복되는지 여부, 축산폐수배출시설의 설치 예정지역이 「환경정책기본법」 등 관계법령의 규정에 의하여 입지가 제한되는지 여부 등을 검토하여 허가여부를 결정하도록 되어 있는바,위 규정에 비추어 보면 축산폐수배출시설의 설치허가는 허가를 받을 수 있는 자의 결격사유 등 별도의 인적요건이 필요 없고, 일정한 시설기준을 갖추었는지 여부에 따라 허가여부가 결정되므로 축산폐수배출시설의 설치허가는 대물적 허가의 성질을 갖는다고 할 것입니다.<br><br>
+○ 그렇다면, 새로이 축산업을 영위하고자 하는 자가 경매절차에 의하여 「오수·분뇨 및 축산폐수의 처리에 관한 법률 제24조의2」 및 「동법 시행령 제12조」의 규정에 의한 축산폐수배출시설 및 축산폐수처리시설의 전부를 취득한 경우에는 사실상 종전의 축산업자가 이미 허가를 받은 축산폐수배출시설 및 축산폐수처리시설 전부를 양수한 경우와 같은 효과를 갖는다 할 것이므로, 종전 축산업자의 축산폐수배출시설 설치허가에 따른 권리·의무를 승계한 것으로 보아야 할 것입니다.<br>
+
+                                            </textarea>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-lg-12 col-md-12 ">
-                                            <label>출처</label>
-                                            <input type="text" class="form-control" placeholder="출처를 입력해 주세요">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <label>게시 시작일</label>
+                                            <input type="date" class="form-control" value="2022-04-20">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 mt-3">
+                                            <label>시</label>
+                                            <select class="form-control">
+                                                <option hidden>- 시 -</option>
+                                                <option selected>00</option> <option>01</option> <option>02</option> <option>03</option>
+                                                <option>04</option> <option>05</option> <option>06</option> <option>07</option>
+                                                <option>08</option> <option>09</option> <option>10</option> <option>11</option>
+                                                <option>12</option> <option>13</option> <option>14</option> <option>15</option>
+                                                <option>16</option> <option>17</option> <option>18</option> <option>19</option>
+                                                <option>20</option> <option>21</option> <option>22</option> <option>23</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 mt-3">
+                                            <label>분</label>
+                                            <select class="form-control">
+                                                <option hidden>- 분 -</option>
+                                                <option selected>00</option> <option>01</option> <option>02</option> <option>03</option>
+                                                <option>04</option> <option>05</option> <option>06</option> <option>07</option>
+                                                <option>08</option> <option>09</option> <option>10</option> <option>11</option>
+                                                <option>12</option> <option>13</option> <option>14</option> <option>15</option>
+                                                <option>16</option> <option>17</option> <option>18</option> <option>19</option>
+                                                <option>20</option> <option>21</option> <option>22</option> <option>23</option>
+                                                <option>24</option> <option>25</option> <option>26</option> <option>27</option>
+                                                <option>28</option> <option>29</option> <option>30</option> <option>31</option>
+                                                <option>32</option> <option>33</option> <option>34</option> <option>35</option>
+                                                <option>36</option> <option>37</option> <option>38</option> <option>39</option>
+                                                <option>40</option> <option>41</option> <option>42</option> <option>43</option>
+                                                <option>44</option> <option>45</option> <option>46</option> <option>47</option>
+                                                <option>48</option> <option>49</option> <option>50</option> <option>51</option>
+                                                <option>52</option> <option>53</option> <option>54</option> <option>55</option>
+                                                <option>56</option> <option>57</option> <option>58</option> <option>59</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <div class="col-lg-6 col-md-6">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <label>게시 종료일</label>
+                                            <input type="date" class="form-control" value="2022-05-15">
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 mt-3">
+                                            <label>시</label>
+                                            <select class="form-control">
+                                                <option hidden>- 시 -</option>
+                                                <option>00</option> <option>01</option> <option>02</option> <option>03</option>
+                                                <option>04</option> <option>05</option> <option>06</option> <option>07</option>
+                                                <option>08</option> <option>09</option> <option>10</option> <option>11</option>
+                                                <option>12</option> <option>13</option> <option>14</option> <option>15</option>
+                                                <option>16</option> <option>17</option> <option>18</option> <option>19</option>
+                                                <option>20</option> <option>21</option> <option>22</option> <option selected>23</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 mt-3">
+                                            <label>분</label>
+                                            <select class="form-control">
+                                                <option hidden>- 분 -</option>
+                                                <option>00</option> <option>01</option> <option>02</option> <option>03</option>
+                                                <option>04</option> <option>05</option> <option>06</option> <option>07</option>
+                                                <option>08</option> <option>09</option> <option>10</option> <option>11</option>
+                                                <option>12</option> <option>13</option> <option>14</option> <option>15</option>
+                                                <option>16</option> <option>17</option> <option>18</option> <option>19</option>
+                                                <option>20</option> <option>21</option> <option>22</option> <option>23</option>
+                                                <option>24</option> <option>25</option> <option>26</option> <option>27</option>
+                                                <option>28</option> <option>29</option> <option>30</option> <option>31</option>
+                                                <option>32</option> <option>33</option> <option>34</option> <option>35</option>
+                                                <option>36</option> <option>37</option> <option>38</option> <option>39</option>
+                                                <option>40</option> <option>41</option> <option>42</option> <option>43</option>
+                                                <option>44</option> <option>45</option> <option>46</option> <option>47</option>
+                                                <option>48</option> <option>49</option> <option>50</option> <option>51</option>
+                                                <option>52</option> <option>53</option> <option>54</option> <option>55</option>
+                                                <option>56</option> <option>57</option> <option>58</option> <option selected>59</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
                                             <div class="custom-control custom-radio d-inline-block  mr-3">
                                                 <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
                                                 <label class="custom-control-label" for="credit">사용</label>
@@ -1078,9 +1156,9 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                             </div>
                         </div>
                         <div class="card-footer">
-                            <button class="btn btn-primary float-right  ml-3" onclick="location.href='news.html'">등록</button>
-                            <button class="btn btn-outline-primary float-right" onclick="location.href='news.html'">취소</button>
-
+                            <button class="btn btn-outline-primary" onclick="location.href='notice.html'">삭제</button>
+                            <button class="btn btn-primary float-right  ml-3" onclick="location.href='notice.html'">수정</button>
+                            <button class="btn btn-outline-primary float-right" onclick="location.href='notice.html'">목록</button>
                         </div>
                     </div>
                 </div>
@@ -1468,10 +1546,10 @@ License: You must have a valid license purchased only from maxartkiller.com in o
         });
 
         $('#fileInput').on('change', function(){
-           if($('#fileInput').val()){
-               $('#imageShow1').hide();
-               $('#imageShow2').show();
-           }
+            if($('#fileInput').val()){
+                $('#imageShow1').hide();
+                $('#imageShow2').show();
+            }
         });
         function editor2() {
             /* classic CK Editor */
