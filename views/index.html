@@ -1,7 +1,25 @@
 <!DOCTYPE html>
+<!--
+Template Name: AdminUX-Pro - Responsive Admin Dashboard Template build with Bootstrap 4.3.1
+Version: 1.0.0
+Author: Maxartkiller
+Website: https://www.maxartkiller.com/
+Contact: info@maxartkiller.com
+Follow: www.twitter.com/maxartkiller
+Like: www.facebook.com/maxartkiller
+Purchase: https://www.maxartkiller.com/
+License: You must have a valid license purchased only from maxartkiller.com in order to legally use the theme for your project.
+-->
 <html lang="en">
 <head>
+    <title>DIGITAL AQUA TWIN</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Worlds Best Admin UX Dashbaoard PRO version for bootstrap template, Select, Calandar, Report, Charts, Tables etc." name="description" />
+    <meta content="" name="author" />
     <link rel="shortcut icon" href="../resources/assets/img/logoicon.png">
+
 
     <!-- g fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
@@ -22,46 +40,14 @@
     <!-- dataTables picker -->
     <link href="../resources/assets/vendor/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="../resources/assets/vendor/DataTables-1.10.18/css/responsive.dataTables.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Vendor or 3rd party style ends -->
 
     <!-- Customized template style mandatory -->
     <link href="../resources/assets/css/style-darkblue-dark.css" rel="stylesheet" id="stylelink">
-    <script src="../resources/assets/js/jquery-3.3.1.min.js"></script>
-    <script src="../resources/assets/js/popper.min.js"></script>
-    <script src="../resources/assets/vendor/bootstrap/js/bootstrap.min.js"></script><script src="../resources/assets/vendor/cookie/jquery.cookie.js"></script>
-    <!-- Global js ends -->
 
-    <!-- Vendor or 3rd party js -->
-    <!-- Chart js -->
-    <script src="../resources/assets/vendor/chartjs/Chart.min.js"></script>
-    <script src="../resources/assets/vendor/chartjs/utils.js"></script>
-    <!-- date range picker -->
-    <script src="../resources/assets/vendor/daterangepicker-master/moment.min.js"></script>
-    <!-- Multiselect -->
-    <script src="../resources/assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
-    <script src="../resources/assets/vendor/daterangepicker-master/daterangepicker.js"></script>
-    <!-- DataTables js  -->
-    <script src="../resources/assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-    <script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.responsive.min.js"></script>
-    <script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
-    <!-- Circular progress js  -->
-    <script src="../resources/assets/vendor/circle-progress/circle-progress.min.js"></script>
-    <!-- Sparklines js  -->
-    <script src="../resources/assets/vendor/sparklines/jquery.sparkline.min.js"></script>
-    <!-- vector maps js  -->
-    <script src="../resources/assets/vendor/jquery-jvectormap/jquery-jvectormap.js"></script>
-    <script src="../resources/assets/vendor/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <!-- Vendor or 3rd party js ends -->
-    <script src="../resources/assets/vendor/ckeditor/ckeditor.js"></script>
-
-    <title>DIGITAL AQUA TWIN</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Worlds Best Admin UX Dashbaoard PRO version for bootstrap template, Select, Calandar, Report, Charts, Tables etc." name="description" />
-    <meta content="" name="author" />
     <style>
         .alCenter{text-align:center;}
         .alRight{text-align:right;}
@@ -337,7 +323,7 @@
         </div>
 
         <!-- Main container starts -->
-        <div class="main-container container-fluid" id="main-container">
+        <div class="container main-container container-fluid" id="main-container">
             <div class="page-subtitle">Summary</div>
             <div class="row mb-4">
 
@@ -388,7 +374,8 @@
                         <div class="card-body py-4">
                             <div class="row">
                                 <div class="col-6 text-center align-self-center">
-                                    <div class="donughtchart"><iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
+                                    <div class="donughtchart">
+                                        <iframe class="chartjs-hidden-iframe" tabindex="-1" style="display: block; overflow: hidden; border: 0px; margin: 0px; inset: 0px; height: 100%; width: 100%; position: absolute; pointer-events: none; z-index: -1;"></iframe>
                                         <canvas id="donughtchart" width="104" height="104" style="display: block; width: 104px; height: 104px;"></canvas>
                                     </div>
                                 </div>
@@ -522,7 +509,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="page-subtitle">MONITORING</div>
@@ -561,11 +547,75 @@
                     <div class="col-12 col-md-7 col-lg-8 px-0 border-left">
                         <div class="card h-100 border-0">
                             <div class="card-header p-0 border-0 rounded-0">
-                                <ul class="nav nav-tabs border-0" role="tablist" id="sensorNowDiv">
+                                <ul class="nav nav-tabs border-0" role="tablist" >
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="COND1001-tab" data-toggle="tab" href="#COND1001-chart" role="tab" aria-controls="COND1001-chart" aria-selected="true">
+                                            <h4 class="font-weight-normal">8222.5</h4>
+                                            <p class="text-template-primary-light mt-2 mb-0">COND</p>
+                                            <p>
+                                                <small class="text-mute">
+                                                    <span class="text-success">ppm</span>
+                                                    <span class="mb-0">Normal</span>
+                                                </small>
+                                            </p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="ORP1001-tab" data-toggle="tab" href="#ORP1001-chart"  role="tab" aria-controls="ORP1001-chart" aria-selected="false"><h4 class="font-weight-normal">287.2</h4><p class="text-template-primary-light mt-2 mb-0">ORP</p><p> <small class="text-mute"> <span class="text-success">mV</span><span class="mb-0">Normal</span></small> </p></a></li><li class="nav-item"> <a class="nav-link" id="PH1001-tab" data-toggle="tab" href="#PH1001-chart"  role="tab" aria-controls="PH1001-tab" aria-selected="false"><h4 class="font-weight-normal">8.9</h4><p class="text-template-primary-light mt-2 mb-0">PH</p><p> <small class="text-mute"> <span class="text-success">pH</span><span class="mb-0">Normal</span></small> </p></a></li><li class="nav-item">
+                                    <a class="nav-link" id="TEMP1001-tab" data-toggle="tab" href="#TEMP1001-chart" role="tab" aria-controls="TEMP1001-chart" aria-selected="false">
+                                        <h4 class="font-weight-normal">19.6</h4>
+                                        <p class="text-template-primary-light mt-2 mb-0">Temp</p>
+                                        <p>
+                                            <small class="text-mute">
+                                                <span class="text-success">℃</span>
+                                                <span class="mb-0">Normal</span>
+                                            </small>
+                                        </p>
+                                    </a>
+                                </li><li class="nav-item"> <a class="nav-link" id="SS1001-tab" data-toggle="tab" href="#SS1001-chart"  role="tab" aria-controls="SS1001-chart" aria-selected="false"><h4 class="font-weight-normal">8.5</h4><p class="text-template-primary-light mt-2 mb-0">SS</p><p> <small class="text-mute"> <span class="text-success">mg/L</span><span class="mb-0">Normal</span></small> </p></a></li><li class="nav-item"> <a class="nav-link" id="LDO11002-tab" data-toggle="tab" href="#LDO11002-chart"  role="tab" aria-controls="LDO11002-chart" aria-selected="false"><h4 class="font-weight-normal">13.2</h4><p class="text-template-primary-light mt-2 mb-0">LDO1</p><p> <small class="text-mute"> <span class="text-success">NONE</span><span class="mb-0">Normal</span></small> </p></a></li><li class="nav-item"> <a class="nav-link" id="LDO21002-tab" data-toggle="tab" href="#LDO21002-chart"  role="tab" aria-controls="LDO21002-chart" aria-selected="false">
+                                    <h4 class="font-weight-normal">12.9</h4><p class="text-template-primary-light mt-2 mb-0">LDO2</p><p>
+                                    <small class="text-mute"> <span class="text-success">NONE</span><span class="mb-0">Normal</span></small> </p></a></li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="LDO31002-tab" data-toggle="tab" href="#LDO31002-chart"  role="tab" aria-controls="LDO31002-chart" aria-selected="false">
+                                            <h4 class="font-weight-normal">13.0</h4>
+                                            <p class="text-template-primary-light mt-2 mb-0">LDO3</p>
+                                            <p> <small class="text-mute"> <span class="text-success">mg/L</span><span class="mb-0">Normal</span></small> </p></a></li>
                                 </ul>
                             </div>
                             <div class="card-body">
-                                <div class="tab-content" id="sensorNowTab"></div>
+                                <div class="tab-content" >
+                                    <div class="tab-pane fade show active" id="COND1001-chart" role="tabpanel" aria-labelledby="COND1001-tab">
+                                        <div class="h-250 mt-3 areachart">
+                                            <canvas id="mixedchartjs"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show" id="ORP1001-chart" role="tabpanel" aria-labelledby="ORP1001-tab">
+                                        <div class="h-250 mt-3">
+                                            <canvas id="mixedchartjsORP1001"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show" id="PH1001-chart" role="tabpanel" aria-labelledby="PH1001-tab">
+                                    <div class="h-250 mt-3">
+                                        <canvas id="mixedchartjsPH1001"></canvas>
+                                    </div>
+                                </div> <div class="tab-pane fade show" id="SS1001-chart" role="tabpanel" aria-labelledby="SS1001-tab">
+                                    <div class="h-250 mt-3">
+                                        <canvas id="mixedchartjsSS1001"></canvas>
+                                    </div>
+                                </div> <div class="tab-pane fade show" id="LDO11002-chart" role="tabpanel" aria-labelledby="LDO11002-tab">
+                                    <div class="h-250 mt-3">
+                                        <canvas id="mixedchartjsLDO11002"></canvas>
+                                    </div>
+                                </div> <div class="tab-pane fade show" id="LDO21002-chart" role="tabpanel" aria-labelledby="LDO21002-tab">
+                                    <div class="h-250 mt-3">
+                                        <canvas id="mixedchartjsLDO21002"></canvas>
+                                    </div>
+                                </div> <div class="tab-pane fade show" id="LDO31002-chart" role="tabpanel" aria-labelledby="LDO31002-tab">
+                                    <div class="h-250 mt-3">
+                                        <canvas id="mixedchartjsLDO31002"></canvas>
+                                    </div>
+                                </div>
+                                </div>
                         </div>
                         <div class="card-footer text-center">
                             <div class="row">
@@ -614,10 +664,121 @@
                     <div class="card h-100 border-0">
                         <div class="card-header p-0 border-0 rounded-0">
                             <ul class="nav nav-tabs border-0" role="tablist" style="flex-wrap:nowrap" id="sensorNowDiv2001">
+                                <li class="nav-item"><a class="nav-link active" id="COND2001-tab" data-toggle="tab" href="#COND2001-chart"
+                                                        role="tab" aria-controls="#COND2001-chart" aria-selected="true"> <h4 class="font-weight-normal">6733.8</h4>
+                                    <p class="text-template-primary-light mt-2 mb-0">COND</p>
+                                    <p>
+                                        <small class="text-mute">
+                                            <span class="text-success">ppm</span>
+                                            <span class="mb-0">Normal</span>
+                                        </small>
+                                    </p>
+                                </a>
+                                </li><li class="nav-item"><a class="nav-link" id="ORP2001-tab" data-toggle="tab" href="#ORP2001-chart"
+                                                             role="tab" aria-controls="#ORP2001-chart" aria-selected="false"> <h4 class="font-weight-normal">294.4</h4>
+                                <p class="text-template-primary-light mt-2 mb-0">ORP</p>
+                                <p>
+                                    <small class="text-mute">
+                                        <span class="text-success">mV</span>
+                                        <span class="mb-0">Normal</span>
+                                    </small>
+                                </p>
+                            </a>
+                            </li><li class="nav-item"><a class="nav-link" id="PH2001-tab" data-toggle="tab" href="#PH2001-chart"
+                                                         role="tab" aria-controls="#PH2001" aria-selected="false"> <h4 class="font-weight-normal">7.4</h4>
+                                <p class="text-template-primary-light mt-2 mb-0">PH</p>
+                                <p>
+                                    <small class="text-mute">
+                                        <span class="text-success">pH</span>
+                                        <span class="mb-0">Normal</span>
+                                    </small>
+                                </p>
+                            </a>
+                            </li><li class="nav-item">
+                                <a class="nav-link" id="TEMP2001-tab" data-toggle="tab" href="#TEMP2001-chart" role="tab" aria-controls="#TEMP2001" aria-selected="false">
+                                    <h4 class="font-weight-normal">19.4</h4>
+                                    <p class="text-template-primary-light mt-2 mb-0">Temp</p>
+                                    <p>
+                                        <small class="text-mute">
+                                            <span class="text-success">℃</span>
+                                            <span class="mb-0">Normal</span>
+                                        </small>
+                                    </p>
+                                </a>
+                            </li><li class="nav-item"><a class="nav-link" id="SS2001-tab" data-toggle="tab" href="#SS2001-chart"
+                                                         role="tab" aria-controls="#SS2001" aria-selected="false"> <h4 class="font-weight-normal">26.6</h4>
+                                <p class="text-template-primary-light mt-2 mb-0">SS</p>
+                                <p>
+                                    <small class="text-mute">
+                                        <span class="text-success">mg/L</span>
+                                        <span class="mb-0">Normal</span>
+                                    </small>
+                                </p>
+                            </a>
+                            </li><li class="nav-item"><a class="nav-link" id="LDO12002-tab" data-toggle="tab" href="#LDO12002-chart"
+                                                         role="tab" aria-controls="#LDO12002" aria-selected="false"> <h4 class="font-weight-normal">14.2</h4>
+                                <p class="text-template-primary-light mt-2 mb-0">LDO1</p>
+                                <p>
+                                    <small class="text-mute">
+                                        <span class="text-success">mg/L</span>
+                                        <span class="mb-0">Normal</span>
+                                    </small>
+                                </p>
+                            </a>
+                            </li><li class="nav-item"><a class="nav-link" id="LDO22002-tab" data-toggle="tab" href="#LDO22002-chart"
+                                                         role="tab" aria-controls="#LDO22002" aria-selected="false"> <h4 class="font-weight-normal">9.1</h4>
+                                <p class="text-template-primary-light mt-2 mb-0">LDO2</p>
+                                <p>
+                                    <small class="text-mute">
+                                        <span class="text-success">mg/L</span>
+                                        <span class="mb-0">Normal</span>
+                                    </small>
+                                </p>
+                            </a>
+                            </li><li class="nav-item"><a class="nav-link" id="LDO32002-tab" data-toggle="tab" href="#LDO32002-chart"
+                                                         role="tab" aria-controls="#LDO32002" aria-selected="false"> <h4 class="font-weight-normal">9.7</h4>
+                                <p class="text-template-primary-light mt-2 mb-0">LDO3</p>
+                                <p>
+                                    <small class="text-mute">
+                                        <span class="text-success">mg/L</span>
+                                        <span class="mb-0">Normal</span>
+                                    </small>
+                                </p>
+                            </a>
+                            </li>
                             </ul>
                         </div>
                         <div class="card-body">
-                            <div class="tab-content" id="sensorNowTabDiv2001"></div>
+                            <div class="tab-content" id="sensorNowTabDiv2001">
+                                <div class="tab-pane fade show active" id="COND2001-chart" role="tabpanel" aria-labelledby="COND2001-tab">
+                                    <div class="h-250 mt-3">
+                                    <canvas id="mixedchartjsCOND2001"></canvas>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="ORP2001-chart" role="tabpanel" aria-labelledby="ORP2001-tab">
+                                    <div class="h-250 mt-3">
+                                         <canvas id="mixedchartjsORP2001"></canvas>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="PH2001-chart" role="tabpanel" aria-labelledby="PH2001-tab">
+                                    <div class="h-250 mt-3">
+                                        <canvas id="mixedchartjsPH2001"></canvas>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show" id="TEMP2001-chart" role="tabpanel" aria-labelledby="TEMP2001-tab">
+                                <div class="h-250 mt-3">
+                                    <canvas id="mixedchartjsTEMP2001"></canvas>
+                                </div>
+                            </div><div class="tab-pane fade show" id="SS2001-chart" role="tabpanel" aria-labelledby="SS2001-tab"> <div class="h-250 mt-3">
+                                <canvas id="mixedchartjsSS2001"></canvas>
+                            </div> </div><div class="tab-pane fade show" id="LDO12002-chart" role="tabpanel" aria-labelledby="LDO12002-tab"> <div class="h-250 mt-3">
+                                <canvas id="mixedchartjsLDO12002"></canvas>
+                            </div> </div><div class="tab-pane fade show" id="LDO22002-chart" role="tabpanel" aria-labelledby="LDO22002-tab"> <div class="h-250 mt-3">
+                                <canvas id="mixedchartjsLDO22002"></canvas>
+                            </div> </div><div class="tab-pane fade show" id="LDO32002-chart" role="tabpanel" aria-labelledby="LDO32002-tab"> <div class="h-250 mt-3">
+                                <canvas id="mixedchartjsLDO32002"></canvas>
+                            </div> </div>
+                            </div>
                     </div>
                     <div class="card-footer text-center">
                         <div class="row">
@@ -631,7 +792,7 @@
         </div>
     </div>
     <div class="page-subtitle">MANAGEMENT</div>
-    <div class="row">
+    <div class="row" onclick="location.href='notice.html'">
         <div class="col-12 col-md-6 col-lg-4">
             <div class="card border-0 shadow-sm mb-4 overflow-hidden">
                 <div class="card-img-top">
@@ -674,7 +835,7 @@
             <div class="card border-0 shadow-sm overflow-hidden h-100">
                 <div class="card-header border-0 bg-none">
                     <div class="row">
-                        <div class="col-12 col-md">
+                        <div class="col-12 col-md" onclick="location.href='fishJournal.html'">
                             <p class="fs15">DAILY REPORT<br><small class="text-template-primary-light">This week</small></p>
                         </div>
                         <form class="form-inline search col-auto align-self-center px-0">
@@ -762,7 +923,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-4">
+        <div class="col-12 col-md-12 col-lg-12 col-xl-4 mb-4">
             <div class="card border-0 shadow-sm overflow-hidden h-100">
                 <div class="card-header border-0 bg-none">
                     <div class="row">
@@ -890,14 +1051,14 @@
     </div>
     <div class="page-subtitle">Information</div>
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-6" onclick="location.href='news.html'">
             <div class="card border-0 shadow-sm overflow-hidden mb-4">
                 <div class="card-header">
                     <div class="row">
                         <div class="col-auto pr-0">
                             <i class="material-icons icons bg-primary md-24 icon-40">devices_other</i>
                         </div>
-                        <div class="col">
+                        <div class="col" >
                             <p class="fs15">News<br><small class="text-template-primary-light">154 Topics posted</small></p>
                         </div>
                     </div>
@@ -949,7 +1110,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-6" onclick="location.href='reference.html'">
             <div class="card border-0 shadow-sm overflow-hidden mb-4">
                 <div class="card-header">
                     <div class="row">
@@ -1005,7 +1166,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-6" onclick="location.href='news.html'">
             <div class="card border-0 shadow-sm overflow-hidden mb-4">
                 <div class="card-header">
                     <div class="row">
@@ -1053,9 +1214,6 @@
                                     <p class="mb-0 template-inverse">[NL481] 상반기 넙치종자 판매량, 전년비 감소, 평년 수준 전망 - KMI 관측센터</p>
                                     <p class="text-template-primary-light">출처 : 작성자 아쿠아인포 | 2022.05.03</p>
                                     <p class="text-template-primary-light">2022년 상반기 넙치 종자 판매량은 평년 수준과 비슷할 것으로 전망된다.
-
-
-
                                         KMI 수산업관측센터는 지난 1~3월까지 누적 판매량이 1,166만 마리로 전년 및 평년 동기 대비 각각 11.3%, 8.8% 감소했으나, 코로나19 종식 기대감 등으로 성어 출하량이 늘어날 것..
                                     </p>
                                 </div>
@@ -1065,7 +1223,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-6" onclick="location.href='news.html'">
             <div class="card border-0 shadow-sm overflow-hidden mb-4">
                 <div class="card-header">
                     <div class="row">
@@ -1103,17 +1261,8 @@
                                     <p class="mb-0 template-inverse">[NL482] ‘유수식 디지털양식 혁신기술개발’ 과제 선정 – 전남대 외</p>
                                     <p class="text-template-primary-light">출처 : 아쿠아인포 등록일 | 2022.05.11</p>
                                     <p class="text-template-primary-light">전남대학교 김태호 교수 연구팀이 해양수산부의 '유수식 디지털양식 혁신기술개발' 과제에 최종 선정됐다.
-
-
-
-
-
                                         전남대학교가 해양수산부의 '유수식 디지털양식 혁신기술개발' 과제에 최종 선정됐다. ⓒ전남대2022
-
-
-
                                         ▶ 연구과제: 유수식 디지털양식 혁신기술개발
-
                                         ▶ 연구기간: 2022. 5~2026. 12 ..</p>
                                 </div>
                             </div>
@@ -1127,7 +1276,6 @@
                                     <p class="mb-0 template-inverse">[NL482] 넙치 식품 안전성 지도∙단속 실시 - 서귀포시</p>
                                     <p class="text-template-primary-light">출처 : 아쿠아인포 등록일 | 2022.05.11</p>
                                     <p class="text-template-primary-light">제주도 서귀포시는 5월 12일부터 제주 양식넙치 안전성 확보를 위한 지도∙단속을 실시하고 있다. 이는 본격적인 넙치 출하 성수기를 맞아 안전한 먹거리로서의 제주 양식넙치 이미지를 제고하기 위함이다. ▶ 지도·단속기관: 제주도, 서귀포시, 제주어류양식수협
-
                                         ▶ 지도·단속방법: 넙치 양식장..</p>
                                 </div>
                             </div>
@@ -1152,10 +1300,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form id="todo-form">
-
-                    <input type="text" class="form-control rounded-0 border-0 text-center"  required="" autofocus="" placeholder="제목을 입력 해주세요.">
-                        <input type="text" class="form-control rounded-0 border-0 text-center"  required="" autofocus="" placeholder="할일을 입력 해주세요.">
+                    <form id="todo-form form-control">
+                        <input type="text" class="form-control rounded-0 border-0"  required="" autofocus="" placeholder="제목을 입력 해주세요."/>
+                        <input type="text" class="form-control rounded-0 border-0"  required="" autofocus="" placeholder="할일을 입력 해주세요."/>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -1190,8 +1337,53 @@
 </footer>
 </div>
 <!-- Main container ends -->
+<script src="../resources/assets/js/jquery-3.3.1.min.js"></script>
+<!--<script src="../resources/assets/js/popper.min.js"></script>-->
+<script src="../resources/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../resources/assets/vendor/cookie/jquery.cookie.js"></script>
+<!-- Global js ends -->
+
+<!-- Vendor or 3rd party js -->
+
+<!-- date range picker -->
+<script src="../resources/assets/vendor/daterangepicker-master/moment.min.js"></script>
+<script src="../resources/assets/vendor/daterangepicker-master/daterangepicker.js"></script>
+<!-- Multiselect -->
+<script src="../resources/assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<!-- Chart js -->
+<script src="../resources/assets/vendor/chartjs/Chart.min.js"></script>
+<script src="../resources/assets/vendor/chartjs/utils.js"></script>
+<!-- Circular progress js  -->
+<script src="../resources/assets/vendor/circle-progress/circle-progress.min.js"></script>
+<!-- Sparklines js  -->
+<script src="../resources/assets/vendor/sparklines/jquery.sparkline.min.js"></script>
+<!-- gaugechart js  -->
+<script src="../resources/assets/vendor/gauge-chart/gauge.min.js"></script>
+<!-- DataTables js  -->
+<script src="../resources/assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.responsive.min.js"></script>
+<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
+
+<!-- vector maps js  -->
+<script src="../resources/assets/vendor/jquery-jvectormap/jquery-jvectormap.js"></script>
+<script src="../resources/assets/vendor/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+<!-- Vendor or 3rd party js ends -->
+
+<!-- Customized template js mandatory -->
+<script src="../resources/assets/js/main.js"></script>
+
+
+<!-- theme picker -->
+<script src="../resources/assets/js/style-picker.js"></script>
+
+<!-- Customized page level js -->
+<!--<script src="../resources/assets/js/networking-dashboard.js"></script>-->
+<!-- Customized page level js -->
+<script src="../resources/assets/js/production-dashboard-modify.js"></script>
+<!--<script src="../resources/assets/vendor/ckeditor/ckeditor.js"></script>-->
+
 <script>
-let sensorNowList = [{"id":36817427,"serial_code":"1001","sensor_type":"COND","sensor_state":"00","value":8222.57,"unit":"ppm","temperature":25.0,"created_at":"2022-10-21T07:42:49.000Z"},{"id":36817426,"serial_code":"1001","sensor_type":"ORP","sensor_state":"00","value":287.208,"unit":"mV","temperature":19.3,"created_at":"2022-10-21T07:42:49.000Z"},{"id":36817425,"serial_code":"1001","sensor_type":"PH","sensor_state":"00","value":8.983,"unit":"pH","temperature":19.6,"created_at":"2022-10-21T07:42:49.000Z"},{"id":36817428,"serial_code":"1001","sensor_type":"SS","sensor_state":"00","value":8.5,"unit":"mg\/L","temperature":23.9,"created_at":"2022-10-21T07:42:49.000Z"},{"id":36817419,"serial_code":"1002","sensor_type":"LDO1","sensor_state":"00","value":13.206,"unit":"NONE","temperature":19.3,"created_at":"2022-10-21T07:42:44.000Z"},{"id":36817421,"serial_code":"1002","sensor_type":"LDO2","sensor_state":"00","value":12.932,"unit":"NONE","temperature":19.4,"created_at":"2022-10-21T07:42:44.000Z"},{"id":36817423,"serial_code":"1002","sensor_type":"LDO3","sensor_state":"00","value":13.098,"unit":"mg\/L","temperature":19.4,"created_at":"2022-10-21T07:42:44.000Z"},{"id":36817422,"serial_code":"2001","sensor_type":"COND","sensor_state":"00","value":6733.821,"unit":"ppm","temperature":19.3,"created_at":"2022-10-21T07:42:44.000Z"},{"id":36817420,"serial_code":"2001","sensor_type":"ORP","sensor_state":"00","value":294.41,"unit":"mV","temperature":19.3,"created_at":"2022-10-21T07:42:44.000Z"},{"id":36817418,"serial_code":"2001","sensor_type":"PH","sensor_state":"00","value":7.44,"unit":"pH","temperature":19.4,"created_at":"2022-10-21T07:42:44.000Z"},{"id":36817424,"serial_code":"2001","sensor_type":"SS","sensor_state":"00","value":26.653,"unit":"mg\/L","temperature":23.8,"created_at":"2022-10-21T07:42:44.000Z"},{"id":36817429,"serial_code":"2002","sensor_type":"LDO1","sensor_state":"00","value":14.213,"unit":"mg\/L","temperature":19.5,"created_at":"2022-10-21T07:42:50.000Z"},{"id":36817430,"serial_code":"2002","sensor_type":"LDO2","sensor_state":"00","value":9.13,"unit":"mg\/L","temperature":19.4,"created_at":"2022-10-21T07:42:50.000Z"},{"id":36817431,"serial_code":"2002","sensor_type":"LDO3","sensor_state":"00","value":9.739,"unit":"mg\/L","temperature":19.5,"created_at":"2022-10-21T07:42:50.000Z"}];
 $(document).ready(function () {
     /* page navigation on load */
 var url = window.location.href.split('#')[0];
@@ -1382,7 +1574,6 @@ $('#tasks a').on('click', function (e) {
 
 
 window.addEventListener('load', function() {
-    sensorNowFunction();
 
     $('.loader').fadeOut('slow');
 
@@ -1404,11 +1595,11 @@ window.addEventListener('load', function() {
 
 
     /* calander picker */
-    var start = moment().subtract(29, 'days');
+    var start = moment().subtract(29, '일');
     var end = moment();
 
     function cb(start, end) {
-        $('#daterangeadminux span').html(start.format('MMM D, YY') + ' - ' + end.format('MMM D, YY'));
+        $('#daterangeadminux span').html(start.format('YY-MM-DD') + ' ~ ' + end.format('YY-MM-DD'));
     }
 
     $('#daterangeadminux').daterangepicker({
@@ -1416,12 +1607,12 @@ window.addEventListener('load', function() {
         endDate: end,
         opens: 'left',
         ranges: {
-            'Today': [moment(), moment()],
-            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-            'This Month': [moment().startOf('month'), moment().endOf('month')],
-            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            '오늘': [moment(), moment()],
+            '어제': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            '지난 7일': [moment().subtract(6, 'days'), moment()],
+            '지난 30 일': [moment().subtract(29, 'days'), moment()],
+            '이번 달': [moment().startOf('month'), moment().endOf('month')],
+            '지난 달': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
         }
     }, cb);
 
@@ -1480,97 +1671,7 @@ $('.wrapper').on('scroll', function () {
         $('.header-container').removeClass('header-fill');
     }
 });
-function sensorNowFunction() {
-    let sensorNowHtml = '';
-    let sensorNowTabHtml = '';
-    let sensorNowDiv2001Html = '';
-    let sensorNowTabDiv2001Html = '';
-   for(let i= 0 ; i< sensorNowList.length ; i++){
-       let sensorNow = sensorNowList[i];
-       if("1001" == sensorNow.serial_code || "1002" == sensorNow.serial_code){
-           sensorNowHtml += '<li class="nav-item">';
-           if(i == 0 ){
-               sensorNowHtml += `<a class="nav-link active" id="${sensorNow.sensor_type}${sensorNow.serial_code}-tab" data-toggle="tab" href="#${sensorNow.sensor_type}${sensorNow.serial_code}-chart" role="tab" aria-controls="${sensorNow.sensor_type}${sensorNow.serial_code}-tab" aria-selected="true">`;
-               sensorNowTabHtml += ` <div class="tab-pane fade show active" id="${sensorNow.sensor_type}${sensorNow.serial_code}-chart" role="tabpanel" aria-labelledby="${sensorNow.sensor_type}${sensorNow.serial_code}-tab">
-                                        <div class="h-250 mt-3">
-                                            <canvas id="mixedchartjs${sensorNow.sensor_type}${sensorNow.serial_code}"></canvas>
-                                        </div>
-                                </div>`;
-           }else{
-               sensorNowHtml += ` <a class="nav-link" id="${sensorNow.sensor_type}${sensorNow.serial_code}-tab" data-toggle="tab" href="#${sensorNow.sensor_type}${sensorNow.serial_code}-chart"  role="tab" aria-controls="${sensorNow.sensor_type}${sensorNow.serial_code}-tab" aria-selected="false">`;
-               sensorNowTabHtml += ` <div class="tab-pane fade show" id="${sensorNow.sensor_type}${sensorNow.serial_code}-chart" role="tabpanel" aria-labelledby="${sensorNow.sensor_type}${sensorNow.serial_code}-tab">
-                                        <div class="h-250 mt-3">
-                                            <canvas id="mixedchartjs${sensorNow.sensor_type}${sensorNow.serial_code}"></canvas>
-                                        </div>
-                                </div>`;
-           }
-           sensorNowHtml +=`<h4 class="font-weight-normal">${sensorNow.value}</h4>`;
-           sensorNowHtml += `<p class="text-template-primary-light mt-2 mb-0">${sensorNow.sensor_type}</p>`;
-           sensorNowHtml +=`<p> <small class="text-mute"> <span class="text-success">${sensorNow.unit}</span><span class="mb-0">Normal</span></small> </p></a></li>`;
-           if('PH' == sensorNow.sensor_type){
-               sensorNowHtml +=`<li class="nav-item">
-                                                <a class="nav-link" id="TEMP${sensorNow.serial_code}-tab" data-toggle="tab" href="#TEMP${sensorNow.serial_code}-chart" role="tab" aria-controls="TEMP${sensorNow.serial_code}-tab" aria-selected="false">
-                                                    <h4 class="font-weight-normal">${sensorNow.temperature}</h4>
-                                                    <p class="text-template-primary-light mt-2 mb-0">Temp</p>
-                                                    <p>
-                                                        <small class="text-mute">
-                                                            <span class="text-success">℃</span>
-                                                            <span class="mb-0">Normal</span>
-                                                        </small>
-                                                    </p>
-                                                </a>
-                                            </li>`;
-           }
-       } else if("2001" == sensorNow.serial_code || "2002" == sensorNow.serial_code){
-           sensorNowDiv2001Html += `<li class="nav-item">`;
-           if(i ==7){
-               sensorNowDiv2001Html += `<a class="nav-link active" id="${sensorNow.sensor_type}${sensorNow.serial_code}-tab" data-toggle="tab" href="#${sensorNow.sensor_type}${sensorNow.serial_code}-chart"
-                                    role="tab" aria-controls="#${sensorNow.sensor_type}${sensorNow.serial_code}" aria-selected="true">`;
-               sensorNowTabDiv2001Html += `<div class="tab-pane fade show active" id="${sensorNow.sensor_type}${sensorNow.serial_code}-chart" role="tabpanel" aria-labelledby="${sensorNow.sensor_type}${sensorNow.serial_code}-tab">`;
-           }else {
-               sensorNowDiv2001Html += `<a class="nav-link" id="${sensorNow.sensor_type}${sensorNow.serial_code}-tab" data-toggle="tab" href="#${sensorNow.sensor_type}${sensorNow.serial_code}-chart"
-                                    role="tab" aria-controls="#${sensorNow.sensor_type}${sensorNow.serial_code}" aria-selected="false">`;
-               sensorNowTabDiv2001Html += `<div class="tab-pane fade show" id="${sensorNow.sensor_type}${sensorNow.serial_code}-chart" role="tabpanel" aria-labelledby="${sensorNow.sensor_type}${sensorNow.serial_code}-tab">`;
-           }
-           sensorNowDiv2001Html += ` <h4 class="font-weight-normal">${sensorNow.value}</h4>
-                                    <p class="text-template-primary-light mt-2 mb-0">${sensorNow.sensor_type}</p>
-                                    <p>
-                                        <small class="text-mute">
-                                            <span class="text-success">${sensorNow.unit}</span>
-                                            <span class="mb-0">Normal</span>
-                                        </small>
-                                    </p>
-                                    </a>
-                                    </li>`;
-           sensorNowTabDiv2001Html +=` <div class="h-250 mt-3">
-                                        <canvas id="mixedchartjs${sensorNow.sensor_type}${sensorNow.serial_code}"></canvas>
-                                    </div> </div>`;
-           if('PH' == sensorNow.sensor_type) {
-               sensorNowDiv2001Html += `<li class="nav-item">
-                                            <a class="nav-link" id="TEMP${sensorNow.serial_code}-tab" data-toggle="tab" href="#TEMP${sensorNow.serial_code}-chart" role="tab" aria-controls="#TEMP${sensorNow.serial_code}" aria-selected="false">
-                                                <h4 class="font-weight-normal">${sensorNow.temperature}</h4>
-                                                <p class="text-template-primary-light mt-2 mb-0">Temp</p>
-                                                <p>
-                                                    <small class="text-mute">
-                                                        <span class="text-success">℃</span>
-                                                        <span class="mb-0">Normal</span>
-                                                    </small>
-                                                </p>
-                                            </a>
-                                        </li>`;
-               sensorNowTabDiv2001Html += `<div class="tab-pane fade show" id="TEMP${sensorNow.serial_code}-chart" role="tabpanel" aria-labelledby="TEMP${sensorNow.serial_code}-tab">
-                                    <div class="h-250 mt-3">
-                                        <canvas id="mixedchartjsTEMP${sensorNow.serial_code}"></canvas>
-                                    </div>
-                                </div>`;
-           }
-       }
-   }
-   $('#sensorNowDiv').html(sensorNowHtml);
-   $('#sensorNowTab').html(sensorNowTabHtml);
-   $('#sensorNowDiv2001').html(sensorNowDiv2001Html);
-    $('#sensorNowTabDiv2001').html(sensorNowTabDiv2001Html);
-}
+
 $('#btnAppend').click(function () {
     $('#todoAppend').append(`
 
@@ -1578,8 +1679,8 @@ $('#btnAppend').click(function () {
                             <div class="row">
                                 <div class="col-auto align-self-center">
                                     <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="checktask14">
-                                        <label class="custom-control-label" for="checktask14"></label>
+                                        <input type="checkbox" class="custom-control-input" >
+                                        <label class="custom-control-label" ></label>
                                     </div>
                                 </div>
                                 <div class="col pl-0">

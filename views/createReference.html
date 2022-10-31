@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--
+<!-- 
 Template Name: AdminUX-Pro - Responsive Admin Dashboard Template build with Bootstrap 4.3.1
 Version: 1.0.0
 Author: Maxartkiller
@@ -35,11 +35,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <link href="../resources/assets/vendor/flags/css/flag-icon.min.css" rel="stylesheet">
     <!-- daterange picker -->
     <link href="../resources/assets/vendor/daterangepicker-master/daterangepicker.css" rel="stylesheet">
-    <!-- dataTables picker -->
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/responsive.dataTables.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/fixedHeader.dataTables.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/fixedColumns.bootstrap4.min.css" rel="stylesheet">
+    <!-- dropzone js -->
+    <link href="../resources/assets/vendor/dropzone-master/dist/dropzone.css" rel="stylesheet">
 
     <!-- Vendor or 3rd party style ends -->
 
@@ -241,7 +238,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                 <div class="nav-item"><a class="nav-link" href="multiselect.html"><span>Multiselect</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="context-menu.html"><span>Context Menu</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="autocomplete.html"><span>Auto Complete</span></a></div>
-                <div class="nav-item"><a class="nav-link" href="wizard.html"><span>Wizards</span></a></div>
+
                 <div class="nav-item"><a class="nav-link" href="treeview.html"><span>Tree View</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="editor.html"><span>Editor</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="dropzone.html"><span>Dropzone</span></a></div>
@@ -1013,104 +1010,80 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                     </div>
                 </div>
             </div>
-            <div class="row submenu">
-                <div class="container-fluid " id="submenu-container">
-                    <div class="row">
-                        <!-- Submenu section starts -->
-                        <nav class="navbar col-12 ">
-                            <div class="dropdown mr-auto d-flex d-sm-none">
-                                <button class="btn dropdown-toggle btn-sm btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dashboard
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Dashboard</a>
-                                    <a class="dropdown-item" href="#">Featured</a>
-                                    <a class="dropdown-item" href="#">popular</a>
-                                </div>
-                            </div>
-                            <ul class="nav nav-pills mr-auto d-none d-sm-flex">
-                                <li class="nav-item ">
-                                    <a class="nav-link active" href="#">Dashboard</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Featured</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">popular</a>
-                                </li>
-                            </ul>
-                            <ul class="nav nav-pills ml-auto d-none d-xl-flex">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Today</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">This week</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">This Month</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline ml-auto ml-sm-3">
-                                <div id="daterangeadminux" class="form-control form-control-sm">
-                                    <span></span> <i class="material-icons avatar avatar-26 text-template-primary cal-icon">event</i>
-                                </div>
-
-                            </form>
-                        </nav>
-                        <!-- Submenu section ends -->
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Main container starts -->
         <div class="container main-container" id="main-container">
-            <div class="card border-0 shadow-sm mb-4">
-                <div class="card-header border-0 bg-none">
-                    <div class="row">
-                        <div class="col-6 col-md">
-                            <p class="fs15">자료 관리</p>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 mx-auto align-self-center">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10 mx-auto">
+                                    <div class="row ">
+                                        <div class="col-lg-12 col-md-12 text-center">
+                                            <h1 class="mt-4">자료 신규 등록</h1>
+                                            <p class="text-mute">신규 등록할 자료를 입력해 주세요</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>분류</label>
+                                            <select class="form-control">
+                                                <option hidden>- 분류를 선택해 주세요 -</option>
+                                                <option>매뉴얼</option>
+                                                <option>참고자료</option>
+                                                <option>통계</option>
+                                                <option>보도자료</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>미리보기 업로드</label>
+                                            <input type="file" class="form-control" id="fileInput">
+                                            <h1 id="imageShow1" class="icon-circle icons icon-120 bg-light-primary text-primary mt-2"><i class="material-icons md-48 ">help_outline</i></h1>
+                                            <img id="imageShow2" class="mt-2"  src="../resources/assets/img/main/a_new_1.png" style="display: none;width: 120px; height: 120px;">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-12 col-md-12 ">
+                                            <label>제목</label>
+                                            <input type="text" class="form-control" placeholder="제목을 입력해 주세요">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-12 col-md-12">
+                                          <label>내용</label>
+                                            <textarea class="form-control" rows="10" id="editor2"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-6 col-md-6">
+                                        <label for="file">첨부 파일</label>
+                                        <input type="file" class="form-control" id="file">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <div class="custom-control custom-radio d-inline-block  mr-3">
+                                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked="" required="">
+                                                <label class="custom-control-label" for="credit">사용</label>
+                                            </div>
+                                            <div class="custom-control custom-radio d-inline-block mr-3">
+                                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
+                                                <label class="custom-control-label" for="debit">사용안함</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-auto align-self-center">
+                        <div class="card-footer">
+                            <button class="btn btn-primary float-right  ml-3" onclick="location.href='reference.html'">등록</button>
+                            <button class="btn btn-outline-primary float-right" onclick="location.href='reference.html'">취소</button>
                         </div>
                     </div>
                 </div>
-                <div class="card-body ">
-                    <table class="table datatable display responsive w-100">
-                        <thead>
-                        <tr>
-                            <th class="all">No.</th>
-                            <th class="min-tablet">분류</th>
-                            <th class="min-tablet">미리보기</th>
-                            <th class="all">제목</th>
-                            <th class="min-tablet">사용</th>
-                            <th class="min-desktop">등록일</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody >
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">1</p></td><td><span class="badge badge-success vm">통계</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_1.png" alt=""></figure></div></td><td>2021년 수산물 생산 및 유통산업 실태조사 </td><td><div class="btn-success btn btn-sm">사용</div></td><td>2022-02-13</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">2</p></td><td><span class="badge badge-warning vm">참고자료</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_2.png" alt=""></figure></div></td><td>해양수산백서 2002-2003</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2022-01-08</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">3</p></td><td><span class="badge badge-danger vm">매뉴얼</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_3.png" alt=""></figure></div></td><td>넙치 양식기술매뉴얼</td><td><div class="btn-danger btn btn-sm">사용안함</div></td><td>2022-01-05</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">4</p></td><td><span class="badge badge-warning vm">참고자료</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_2.png" alt=""></figure></div></td><td>해양수산백서 2002-2003</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2021-12-27</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">5</p></td><td><span class="badge badge-success vm">통계</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_1.png" alt=""></figure></div></td><td>2020년 수산물 생산 및 유통산업 실태조사 </td><td><div class="btn-success btn btn-sm">사용</div></td><td>2021-12-05</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">6</p></td><td><span class="badge badge-warning vm">참고자료</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_2.png" alt=""></figure></div></td><td>해양수산백서 2002-2003</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2021-11-22</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">7</p></td><td><span class="badge badge-danger vm">매뉴얼</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_3.png" alt=""></figure></div></td><td>넙치 양식기술매뉴얼</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2021-11-13</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">8</p></td><td><span class="badge badge-warning vm">참고자료</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_2.png" alt=""></figure></div></td><td>해양수산백서 2002-2003</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2021-11-01</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">9</p></td><td><span class="badge badge-success vm">통계</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_1.png" alt=""></figure></div></td><td>2020년 수산물 생산 및 유통산업 실태조사 </td><td><div class="btn-success btn btn-sm">사용</div></td><td>2021-10-31</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">10</p></td><td><span class="badge badge-warning vm">참고자료</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_2.png" alt=""></figure></div></td><td>해양수산백서 2002-2003</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2021-09-05</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">11</p></td><td><span class="badge badge-danger vm">매뉴얼</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_3.png" alt=""></figure></div></td><td>넙치 양식기술매뉴얼</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2021-09-05</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">12</p></td><td><span class="badge badge-warning vm">참고자료</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_2.png" alt=""></figure></div></td><td>해양수산백서 2002-2003</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2021-09-01</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">13</p></td><td><span class="badge badge-success vm">통계</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_1.png" alt=""></figure></div></td><td>2020년 수산물 생산 및 유통산업 실태조사 </td><td><div class="btn-success btn btn-sm">사용</div></td><td>2020-05-17</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">14</p></td><td><span class="badge badge-warning vm">참고자료</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_2.png" alt=""></figure></div></td><td>해양수산백서 2002-2003</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2020-05-17</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">15</p></td><td><span class="badge badge-danger vm">매뉴얼</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_3.png" alt=""></figure></div></td><td>넙치 양식기술매뉴얼</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2020-05-17</td><td></td></tr>
-                        <tr onclick="location.href='modifyReference.html'"><td><p class="mb-0 template-inverse">16</p></td><td><span class="badge badge-warning vm">참고자료</span></td><td><div class="media"><figure class="mb-0 avatar avatar-40 mr-2"><img src="../resources/assets/img/main/a_new_2.png" alt=""></figure></div></td><td>해양수산백서 2002-2003</td><td><div class="btn-success btn btn-sm">사용</div></td><td>2020-05-12</td><td></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="card-footer mb-5">
-                <button class="btn btn-primary float-right" onclick="location.href='createReference.html'">신규 등록</button>
             </div>
         </div>
         <!-- Main container ends -->
@@ -1470,12 +1443,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <!-- date range picker -->
 <script src="../resources/assets/vendor/daterangepicker-master/moment.min.js"></script>
 <script src="../resources/assets/vendor/daterangepicker-master/daterangepicker.js"></script>
-<!-- DataTables js  -->
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.responsive.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.fixedHeader.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.fixedColumns.min.js"></script>
+<!-- dropzone.js  -->
+<script src="../resources/assets/vendor/dropzone-master/dropzone.js"></script>
 
 <!-- Vendor or 3rd party js ends -->
 
@@ -1487,40 +1456,32 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <script src="../resources/assets/js/style-picker.js"></script>
 <!-- theme picker ends -->
 
+<!-- CkEditor -->
+<script src="../resources/assets/vendor/ckeditor/ckeditor.js"></script>
 <!-- Customized page level js -->
 <script>
     'use strict'
-    $(document).ready(function() {
-      //  makeListRow(dataList);
-        /* data Table */
-        $('.datatable').DataTable({
-            'responsive': true,
-            'searching': true,
-            paging: true,
-            "bLengthChange": true,
-            "pageLength": 10,
-            "columnDefs": [{
-                "targets": 5,
-                "orderable": true
-            }],
-            language: {
-                emptyTable: "데이터가 없습니다.",
-                lengthMenu: "페이지당 _MENU_ 개씩 보기",
-                info: "현재 _START_ - _END_ / _TOTAL_건",
-                infoEmpty: "데이터 없음",
-                infoFiltered: "( _MAX_건의 데이터에서 필터링됨 )",
-                search: "검색",
-                zeroRecords: "일치하는 데이터가 없습니다.",
-                loadingRecords: "로딩중...",
-                processing: "잠시만 기다려 주세요.",
-                paginate: {
-                    next: "다음",
-                    previous: "이전",
-                },
-            },
+    $(window).on('load', function() {
+        $("#my-dropzone").dropzone({
+            url: "../file-upload",
+            addRemoveLinks: "dictRemoveFile"
         });
 
+        $('#fileInput').on('change', function(){
+           if($('#fileInput').val()){
+               $('#imageShow1').hide();
+               $('#imageShow2').show();
+           }
+        });
+        function editor2() {
+            /* classic CK Editor */
+            ClassicEditor
+                .create(document.querySelector('#editor2'))
+
+        }
+        editor2()
     });
+
 </script>
 <!-- Customized page level js ends -->
 </body>
