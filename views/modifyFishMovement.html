@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--
+<!-- 
 Template Name: AdminUX-Pro - Responsive Admin Dashboard Template build with Bootstrap 4.3.1
 Version: 1.0.0
 Author: Maxartkiller
@@ -35,11 +35,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <link href="../resources/assets/vendor/flags/css/flag-icon.min.css" rel="stylesheet">
     <!-- daterange picker -->
     <link href="../resources/assets/vendor/daterangepicker-master/daterangepicker.css" rel="stylesheet">
-    <!-- dataTables picker -->
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/responsive.dataTables.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/fixedHeader.dataTables.min.css" rel="stylesheet">
-    <link href="../resources/assets/vendor/DataTables-1.10.18/css/fixedColumns.bootstrap4.min.css" rel="stylesheet">
+    <!-- dropzone js -->
+    <link href="../resources/assets/vendor/dropzone-master/dist/dropzone.css" rel="stylesheet">
 
     <!-- Vendor or 3rd party style ends -->
 
@@ -57,8 +54,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <div class="row h-100">
         <div class="col-auto align-self-center  mx-auto text-center">
             <div class="loader-ripple"><div></div><div></div></div>
-            <h2>AdminuxPRO</h2>
-            <p>HTML Template</p>
+            <h2>AQUATWIN LOADING</h2>
+            <p>Please Waiting...</p>
         </div>
     </div>
 </div>
@@ -241,7 +238,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                 <div class="nav-item"><a class="nav-link" href="multiselect.html"><span>Multiselect</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="context-menu.html"><span>Context Menu</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="autocomplete.html"><span>Auto Complete</span></a></div>
-                <div class="nav-item"><a class="nav-link" href="wizard.html"><span>Wizards</span></a></div>
+
                 <div class="nav-item"><a class="nav-link" href="treeview.html"><span>Tree View</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="editor.html"><span>Editor</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="dropzone.html"><span>Dropzone</span></a></div>
@@ -1013,105 +1010,136 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                     </div>
                 </div>
             </div>
-            <div class="row submenu">
-                <div class="container-fluid " id="submenu-container">
-                    <div class="row">
-                        <!-- Submenu section starts -->
-                        <nav class="navbar col-12 ">
-                            <div class="dropdown mr-auto d-flex d-sm-none">
-                                <button class="btn dropdown-toggle btn-sm btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dashboard
-                                </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Dashboard</a>
-                                    <a class="dropdown-item" href="#">Featured</a>
-                                    <a class="dropdown-item" href="#">popular</a>
-                                </div>
-                            </div>
-                            <ul class="nav nav-pills mr-auto d-none d-sm-flex">
-                                <li class="nav-item ">
-                                    <a class="nav-link active" href="#">Dashboard</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Featured</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">popular</a>
-                                </li>
-                            </ul>
-                            <ul class="nav nav-pills ml-auto d-none d-xl-flex">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Today</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">This week</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">This Month</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline ml-auto ml-sm-3">
-                                <div id="daterangeadminux" class="form-control form-control-sm">
-                                    <span></span> <i class="material-icons avatar avatar-26 text-template-primary cal-icon">event</i>
-                                </div>
-
-                            </form>
-                        </nav>
-                        <!-- Submenu section ends -->
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Main container starts -->
         <div class="container main-container" id="main-container">
-            <div class="card border-0 shadow-sm mb-4">
-                <div class="card-header border-0 bg-none">
-                    <div class="row">
-                        <div class="col-12 col-md">
-                            <p class="fs15">이동 관리</p>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-12 mx-auto align-self-center">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-body">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10 mx-auto">
+                                    <div class="row ">
+                                        <div class="col-lg-12 col-md-12 text-center">
+                                            <h1 class="mt-4">이동 상세</h1>
+                                            <p class="text-mute">어종 이동 상세 정보 확인 및 수정 가능합니다</p>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>어종</label>
+                                            <select class="form-control">
+                                                <option>- 어종을 선택해주세요 -</option>
+                                                <option>	참돔	</option>
+                                                <option>	흑돔	</option>
+                                                <option selected>	광어	</option>
+                                                <option>	참가자미	</option>
+                                                <option>	가자미	</option>
+                                                <option>	붉돔	</option>
+                                                <option>	옥돔	</option>
+                                                <option>	긴꼬리벵에돔	</option>
+                                                <option>	금눈돔	</option>
+                                                <option>	백미돔	</option>
+                                                <option>	물가자미	</option>
+                                                <option>	황다랑어	</option>
+                                                <option>	가다랑어	</option>
+                                                <option>	날개다랑어	</option>
+                                                <option>	우럭(조피볼락)	</option>
+                                                <option>	황돔	</option>
+                                                <option>	망치고등어	</option>
+                                                <option>	참조기	</option>
+                                                <option>	민어	</option>
+                                                <option>	숭어	</option>
+                                                <option>	참숭어	</option>
+                                                <option>	뱅어돔	</option>
+                                                <option>	청돔	</option>
+                                                <option>	가름가자미	</option>
+                                                <option>	태평양고등어	</option>
+                                                <option>	참치	</option>
+                                                <option>	장어	</option>
+                                                <option>	파랑볼우럭	</option>
+                                                <option>	민물농어	</option>
+                                                <option>	감성돔	</option>
+                                                <option>	자리돔	</option>
+                                                <option>	도다리	</option>
+                                                <option>	용가자미	</option>
+                                                <option>	민물장어	</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 ">
+                                            <label>개체 수</label>
+                                            <input type="number" class="form-control" value="3000" placeholder="개채 수를 입력해 주세요">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mt-4">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>이동 전 수조</label>
+                                            <select class="form-control">
+                                                <option>- 수조를 선택해주세요 -</option>
+                                                <option selected>	수조 (대)	</option>
+                                                <option>	수조 (중)	</option>
+                                                <option>	수조 (소)	</option>
+                                                <option>	수조1	</option>
+                                                <option>	수조2	</option>
+                                                <option>	신규수조	</option>
+                                                <option>	대형수조1	</option>
+                                                <option>	태평양A	</option>
+                                                <option>	태평양B	</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>이동 후 수조</label>
+                                            <select class="form-control">
+                                                <option>- 수조를 선택해주세요 -</option>
+                                                <option>	수조 (대)	</option>
+                                                <option selected>	수조 (중)	</option>
+                                                <option>	수조 (소)	</option>
+                                                <option>	수조1	</option>
+                                                <option>	수조2	</option>
+                                                <option>	신규수조	</option>
+                                                <option>	대형수조1	</option>
+                                                <option>	태평양A	</option>
+                                                <option>	태평양B	</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-12 col-md-12">
+                                          <label for="exampleFormControlTextarea2">비고</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea2" style="resize: none;" rows="2">
+신규 어종 투입을 위해 수조 (대)를 비우기 위한 어종 이동
+다음 주 내로 절반 출하 예정</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-6 col-md-6 mt-3">
+                                            <label>이동 일자</label>
+                                            <input type="date" class="form-control" value="2022-11-08">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>등록일</label>
+                                            <div>2020-12-11 15:00</div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <label>마지막 수정일</label>
+                                            <div>2022-04-25 10:55</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="col-auto align-self-center">
-                            <button class="btn btn-sm btn-outline-template ml-2" onclick="location.href='../resources/assets/excel/이동관리_20221108.xlsx'">
-                                <i class="material-icons md-18">cloud_download</i> 엑셀다운로드
-                            </button>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-primary" onclick="location.href='fishMovement.html'">삭제</button>
+                            <button class="btn btn-primary float-right  ml-3" onclick="location.href='fishMovement.html'">수정</button>
+                            <button class="btn btn-outline-primary float-right" onclick="location.href='fishMovement.html'">목록</button>
                         </div>
                     </div>
                 </div>
-                <div class="card-body ">
-                    <table class="table datatable display responsive w-100">
-                        <thead>
-                        <tr>
-                            <th class="all">No.</th>
-                            <th class="all">어종</th>
-                            <th class="min-tablet">개체 수</th>
-                            <th class="min-tablet">이동 수조</th>
-                            <th class="min-desktop">이동 일자</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>1</td><td>도미</td><td>3000</td><td><p class="mb-0 template-inverse">수조 (대) → 수조 (중)</p></td><td>2022-10-15</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>2</td><td>광어</td><td>1000</td><td><p class="mb-0 template-inverse">수조 (중) → 수조 (대)</p></td><td>2022-10-15</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>3</td><td>돔</td><td>15000</td><td><p class="mb-0 template-inverse">수조 A → 수조 B</p></td><td>2022-10-11</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>4</td><td>도다리</td><td>12000</td><td><p class="mb-0 template-inverse">수조 C → 수조 D</p></td><td>2022-10-08</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>5</td><td>도미</td><td>3000</td><td><p class="mb-0 template-inverse">수조 (대) → 수조 (중)</p></td><td>2022-10-02</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>6</td><td>광어</td><td>1000</td><td><p class="mb-0 template-inverse">수조 (중) → 수조 (대)</p></td><td>2022-07-02</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>7</td><td>돔</td><td>15000</td><td><p class="mb-0 template-inverse">수조 A → 수조 B</p></td><td>2022-07-01</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>8</td><td>도미</td><td>3000</td><td><p class="mb-0 template-inverse">수조 (대) → 수조 (중)</p></td><td>2022-07-01</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>9</td><td>광어</td><td>1000</td><td><p class="mb-0 template-inverse">수조 (중) → 수조 (대)</p></td><td>2022-05-01</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>10</td><td>광어</td><td>1000</td><td><p class="mb-0 template-inverse">수조 (중) → 수조 (대)</p></td><td>2022-04-22</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>11</td><td>돔</td><td>15000</td><td><p class="mb-0 template-inverse">수조 A → 수조 B</p></td><td>2022-04-22</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>12</td><td>도다리</td><td>12000</td><td><p class="mb-0 template-inverse">수조 C → 수조 D</p></td><td>2022-04-22</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>13</td><td>도다리</td><td>12000</td><td><p class="mb-0 template-inverse">수조 C → 수조 D</p></td><td>2022-03-16</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>14</td><td>도미</td><td>3000</td><td><p class="mb-0 template-inverse">수조 (대) → 수조 (중)</p></td><td>2022-03-16</td><td></td></tr>
-                        <tr onclick="location.href='modifyFishMovement.html'"><td>15</td><td>광어</td><td>1000</td><td><p class="mb-0 template-inverse">수조 (중) → 수조 (대)</p></td><td>2022-03-16</td><td></td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="card-footer mb-5">
-                <button class="btn btn-primary float-right" onclick="location.href='createFishMovement.html'">신규 등록</button>
             </div>
         </div>
         <!-- Main container ends -->
@@ -1471,12 +1499,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <!-- date range picker -->
 <script src="../resources/assets/vendor/daterangepicker-master/moment.min.js"></script>
 <script src="../resources/assets/vendor/daterangepicker-master/daterangepicker.js"></script>
-<!-- DataTables js  -->
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.responsive.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.fixedHeader.min.js"></script>
-<script src="../resources/assets/vendor/DataTables-1.10.18/js/dataTables.fixedColumns.min.js"></script>
+<!-- dropzone.js  -->
+<script src="../resources/assets/vendor/dropzone-master/dropzone.js"></script>
 
 <!-- Vendor or 3rd party js ends -->
 
@@ -1491,33 +1515,36 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <!-- Customized page level js -->
 <script>
     'use strict'
-    $(document).ready(function() {
-        $('.datatable').DataTable({
-            'responsive': true,
-            'searching': true,
-            paging: true,
-            "bLengthChange": true,
-            "pageLength": 10,
-            "columnDefs": [{
-                "targets": 5,
-                "orderable": true
-            }],
-            language: {
-                emptyTable: "데이터가 없습니다.",
-                lengthMenu: "페이지당 _MENU_ 개씩 보기",
-                info: "현재 _START_ - _END_ / _TOTAL_건",
-                infoEmpty: "데이터 없음",
-                infoFiltered: "( _MAX_건의 데이터에서 필터링됨 )",
-                search: "검색",
-                zeroRecords: "일치하는 데이터가 없습니다.",
-                loadingRecords: "로딩중...",
-                processing: "잠시만 기다려 주세요.",
-                paginate: {
-                    next: "다음",
-                    previous: "이전",
-                },
-            },
+    $(window).on('load', function() {
+        $("#my-dropzone").dropzone({
+            url: "../file-upload",
+            addRemoveLinks: "dictRemoveFile"
         });
+
+        $('.datepicker').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            drops: 'up',
+            minYear: 2010
+        }, function(start, end, label) {
+            $('.datepicker').val( start.format('YYYY-MM-DD'));
+        });
+
+        $('.datepicker').on('show.daterangepicker', function(ev, picker) {
+            var thisdp = $('.daterangepicker');
+            setTimeout(function() {
+                thisdp.addClass('active');
+            }, 100);
+        });
+        $('.datepicker').on('hide.daterangepicker', function(ev, picker) {
+            var thisdpc = $('.daterangepicker');
+            thisdpc.removeClass('active');
+
+        });
+        var path = '../assets/img/background-part.png';
+        if ($('.daterangepicker .background').length == 0) {
+            $('.daterangepicker').append('<div class="background" style="background-image: url(' + path + '); z-index:-1; height:80px;"><img src="../resources/assets/img/background-part.png" alt="" style="display:none"></div>');
+        }
     });
 
 </script>
