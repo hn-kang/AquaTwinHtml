@@ -52,4 +52,4 @@
     src: url(../font/SpoqaHanSansNeo-Bold.woff2) format('woff2'),
     url(../font/SpoqaHanSansNeo-Bold.woff) format('woff');
 }
-
+body {font-family:"SpoqaHanSansNeo", "돋움", "dotum", sans-serif;}
