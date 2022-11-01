@@ -57,8 +57,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <div class="row h-100">
         <div class="col-auto align-self-center  mx-auto text-center">
             <div class="loader-ripple"><div></div><div></div></div>
-            <h2>AdminuxPRO</h2>
-            <p>HTML Template</p>
+            <h2>AQUATWIN LOADING</h2>
+            <p>Please Waiting...</p>
         </div>
     </div>
 </div>
@@ -1069,7 +1069,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                 <div class="card-header border-0 bg-none">
                     <div class="row">
                         <div class="col-12 col-md">
-                            <p class="fs15">출하 관리</p>
+                            <p class="fs15">매출 관리</p>
                         </div>
                         <div class="col-auto align-self-center">
                             <button class="btn btn-sm btn-outline-template ml-2">
@@ -1082,7 +1082,7 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                     <table class="table datatable display responsive w-100">
                         <thead>
                         <tr>
-                            <th class="all">Order ID</th>
+                            <th class="all">No.</th>
                             <th class="min-tablet">Order From</th>
                             <th class="min-desktop">Date</th>
                             <th class="">Status</th>
@@ -3730,30 +3730,32 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <script>
     'use strict'
     $(document).ready(function() {
-        /* data Table */
         $('.datatable').DataTable({
             'responsive': true,
-            'searching': false,
-            "bLengthChange": false,
-            "pageLength": 4,
+            'searching': true,
+            paging: true,
+            "bLengthChange": true,
+            "pageLength": 10,
             "columnDefs": [{
                 "targets": 5,
-                "orderable": false
-            }]
+                "orderable": true
+            }],
+            language: {
+                emptyTable: "데이터가 없습니다.",
+                lengthMenu: "페이지당 _MENU_ 개씩 보기",
+                info: "현재 _START_ - _END_ / _TOTAL_건",
+                infoEmpty: "데이터 없음",
+                infoFiltered: "( _MAX_건의 데이터에서 필터링됨 )",
+                search: "검색",
+                zeroRecords: "일치하는 데이터가 없습니다.",
+                loadingRecords: "로딩중...",
+                processing: "잠시만 기다려 주세요.",
+                paginate: {
+                    next: "다음",
+                    previous: "이전",
+                },
+            },
         });
-        $('.datatable2').DataTable({
-            'fixedHeader': true,
-            'responsive': true,
-            'searching': false,
-            "bLengthChange": false,
-            scrollY: 200,
-            "pageLength": 4,
-            "columnDefs": [{
-                "targets": 5,
-                "orderable": false
-            }]
-        });
-
 
     });
 
