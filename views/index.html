@@ -146,10 +146,10 @@
     <h6 class="subtitle fs11">External Link</h6>
     <ul class="nav flex-column">
         <li class="nav-item">
-            <button type="button" onclick="window.open('about:blank').location.href='https://aquatwin.bluedigm.com/login'" class="mb-2 shadow-sm mr-2 btn btn-primary btn-block"><i class="material-icons">insert_chart</i>&nbsp;&nbsp;수조 관측 데이터</button>
+            <button type="button" onclick="window.open('about:blank').location.href='https://aquatwin.bluedigm.com/login'" class="mb-2 shadow-sm mr-2 btn btn-primary btn-block"><i class="material-icons">insert_chart</i>&nbsp;&nbsp;수조 모니터링</button>
         </li>
         <li class="nav-item">
-            <button type="button" onclick="window.open('about:blank').location.href='https://bdinc.tk/#/'" class="mb-2 shadow-sm mr-2 btn btn-primary btn-block"><i class="material-icons ml-2">phone_iphone</i>&nbsp;&nbsp;화상 안내 도우미</button>
+            <button type="button" onclick="window.open('about:blank').location.href='https://bdinc.tk/#/'" class="mb-2 shadow-sm mr-2 btn btn-primary btn-block"><i class="material-icons ml-2">phone_iphone</i>&nbsp;&nbsp;Aqua Call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
         </li>
     </ul>
 
@@ -338,10 +338,10 @@
                         <nav class="navbar col-12 ">
                             <div class="mr-auto d-flex d-sm-none">
                                 <button class="btn dropdown-toggle btn-sm btn-primary" onclick="window.open('about:blank').location.href='https://aquatwin.bluedigm.com/login'"  type="button"><i class="material-icons">insert_chart</i>
-                                    수조 관측 데이터
+                                    수조 모니터링
                                 </button>
                                 <button class="btn dropdown-toggle btn-sm btn-primary ml-3" onclick="window.open('about:blank').location.href='https://bdinc.tk/#/'"  type="button"><i class="material-icons">phone_iphone</i>
-                                    화상 안내 도우미
+                                    Aqua Call
                                 </button>
                             </div>
 <!--                            <ul class="nav nav-pills mr-auto d-none d-sm-flex">-->
@@ -1432,7 +1432,6 @@
         } else {
             var element = $('.sidebar .nav .nav-link').filter(function () {
                 return this.href == url;
-                alert(url)
             }).addClass('active').parent(".nav-item").addClass('active').parents('.nav').slideDown().parents('.dropdown').addClass('show');
         }
 
@@ -1599,7 +1598,7 @@
         for(let i= 0; i< navLinkLength; i++){
             let linkHref = $('.sidebar .nav-link:nth('+i+')' ).attr('href');
             if(htmlName == linkHref){
-                $('.sidebar .nav-item:nth('+i+')' ).addClass('active')
+                $('.sidebar .nav-link:nth('+i+')' ).parent().addClass('active')
             }
         }
 
@@ -1738,7 +1737,8 @@
         console.dir( $(this).parent());
     }
 
-    $(window).on('load', function() {  $('.deletetodo').on('click',deletetodo );
+    $(window).on('load', function() {
+        $('.deletetodo').on('click',deletetodo );
     });
 
 </script>
