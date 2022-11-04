@@ -15,15 +15,13 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <!-- Head tag -->
 
 <head>
-    <meta charset="utf-8" />
-    <title>DIGITAL AQUA TWIN</title>
     <meta charset="UTF-8">
+    <title>DIGITAL AQUA TWIN</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Worlds Best Admin UX Dashbaoard PRO version for bootstrap template, Select, Calandar, Report, Charts, Tables etc." name="description" />
     <meta content="" name="author" />
     <link rel="shortcut icon" href="../resources/assets/img/logoicon.png">
-
 
     <!-- g fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
@@ -49,6 +47,18 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 
 <!-- Head tag ends -->
 
+<!-- Body -->
+<body class="sidemenu-open wrapper-square">
+<div class="loader container-fluid">
+    <div class="row h-100">
+        <div class="col-auto align-self-center  mx-auto text-center">
+            <div class="loader-ripple"><div></div><div></div></div>
+            <h2>AQUATWIN LOADING</h2>
+            <p>Please Waiting...</p>
+        </div>
+    </div>
+</div>
+
 <!-- Logo sidebar -->
 <div class="sidebar">
     <a href="index.html" class="logo">
@@ -60,10 +70,10 @@ License: You must have a valid license purchased only from maxartkiller.com in o
     <h6 class="subtitle fs11">External Link</h6>
     <ul class="nav flex-column">
         <li class="nav-item">
-            <button type="button" onclick="window.open('about:blank').location.href='https://aquatwin.bluedigm.com/login'" class="mb-2 shadow-sm mr-2 btn btn-primary btn-block"><i class="material-icons">insert_chart</i>&nbsp;&nbsp;수조 관측 데이터</button>
+            <button type="button" onclick="window.open('about:blank').location.href='https://aquatwin.bluedigm.com/login'" class="mb-2 shadow-sm mr-2 btn btn-primary btn-block"><i class="material-icons">insert_chart</i>&nbsp;&nbsp;수조 모니터링</button>
         </li>
         <li class="nav-item">
-            <button type="button" onclick="window.open('about:blank').location.href='https://bdinc.tk/#/'" class="mb-2 shadow-sm mr-2 btn btn-primary btn-block"><i class="material-icons ml-2">phone_iphone</i>&nbsp;&nbsp;화상 안내 도우미</button>
+            <button type="button" onclick="window.open('about:blank').location.href='https://bdinc.tk/#/'" class="mb-2 shadow-sm mr-2 btn btn-primary btn-block"><i class="material-icons ml-2">phone_iphone</i>&nbsp;&nbsp;Aqua Call&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
         </li>
     </ul>
 
@@ -246,10 +256,10 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                         <nav class="navbar col-12 ">
                             <div class="mr-auto d-flex d-sm-none">
                                 <button class="btn dropdown-toggle btn-sm btn-primary" onclick="window.open('about:blank').location.href='https://aquatwin.bluedigm.com/login'"  type="button"><i class="material-icons">insert_chart</i>
-                                    수조 관측 데이터
+                                    수조 모니터링
                                 </button>
                                 <button class="btn dropdown-toggle btn-sm btn-primary ml-3" onclick="window.open('about:blank').location.href='https://bdinc.tk/#/'"  type="button"><i class="material-icons">phone_iphone</i>
-                                    화상 안내 도우미
+                                    Aqua Call
                                 </button>
                             </div>
                         </nav>
@@ -261,15 +271,15 @@ License: You must have a valid license purchased only from maxartkiller.com in o
         <!-- Main container starts -->
         <div class="container main-container" id="main-container">
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-12 col-xl-12 mx-auto align-self-center">
+                <div class="col-12 col-md-12 col-lg-12 col-xl-10 mx-auto align-self-center">
                     <div class="card shadow-sm border-0 mb-4">
                         <div class="card-body">
                             <div class="row justify-content-center">
                                 <div class="col-md-10 mx-auto">
                                     <div class="row ">
                                         <div class="col-lg-12 col-md-12 text-center">
-                                            <h1 class="mt-4">어종 신규 등록</h1>
-                                            <p class="text-mute">신규 등록할 어종 정보를 입력해 주세요</p>
+                                            <h1 class="mt-4">신규 어종 등록</h1>
+                                            <p class="text-mute">신규 어종 정보를 등록합니다</p>
                                         </div>
                                     </div>
                                     <br>
@@ -290,12 +300,12 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                                         </div>
                                         <div class="col-lg-6 col-md-6 ">
                                             <label>어종 입력</label>
-                                            <input type="text" class="form-control" placeholder="어종을 입력해 주세요">
+                                            <input type="text" class="form-control"  placeholder="어종을 입력해 주세요">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-lg-12 col-md-12">
-                                          <label for="exampleFormControlTextarea2">특성</label>
+                                            <label for="exampleFormControlTextarea2">특성</label>
                                             <textarea class="form-control" id="exampleFormControlTextarea2" style="resize: none;" rows="2"></textarea>
                                         </div>
                                     </div>
@@ -323,7 +333,6 @@ License: You must have a valid license purchased only from maxartkiller.com in o
                         <div class="card-footer">
                             <button class="btn btn-primary float-right  ml-3" onclick="location.href='fish.html'">등록</button>
                             <button class="btn btn-outline-primary float-right" onclick="location.href='fish.html'">취소</button>
-
                         </div>
                     </div>
                 </div>
@@ -380,7 +389,35 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <script>
     'use strict'
     $(window).on('load', function() {
+        $("#my-dropzone").dropzone({
+            url: "../file-upload",
+            addRemoveLinks: "dictRemoveFile"
+        });
 
+        $('.datepicker').daterangepicker({
+            singleDatePicker: true,
+            showDropdowns: true,
+            drops: 'up',
+            minYear: 2010
+        }, function(start, end, label) {
+            $('.datepicker').val( start.format('YYYY-MM-DD'));
+        });
+
+        $('.datepicker').on('show.daterangepicker', function(ev, picker) {
+            var thisdp = $('.daterangepicker');
+            setTimeout(function() {
+                thisdp.addClass('active');
+            }, 100);
+        });
+        $('.datepicker').on('hide.daterangepicker', function(ev, picker) {
+            var thisdpc = $('.daterangepicker');
+            thisdpc.removeClass('active');
+
+        });
+        var path = '../assets/img/background-part.png';
+        if ($('.daterangepicker .background').length == 0) {
+            $('.daterangepicker').append('<div class="background" style="background-image: url(' + path + '); z-index:-1; height:80px;"><img src="../resources/assets/img/background-part.png" alt="" style="display:none"></div>');
+        }
     });
 
 </script>
