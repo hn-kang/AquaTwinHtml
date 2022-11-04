@@ -395,23 +395,36 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <!-- Customized page level js -->
 <script>
     'use strict'
-    $(window).on('load', function(){
-        // 선택 매뉴 active 표시
-        $('.sidebar .nav-item' ).removeClass('active');
-        let navLinkLength = $('.sidebar .nav-link' ).length;
-        // let pathName = window.location.pathname;
-        // let htmlName =  pathName.substr(pathName.lastIndexOf('/') + 1);
-        let htmlName =  'news.html'; // 페이지가 매뉴에 없는 경우
-        for(let i= 0; i< navLinkLength; i++){
-            let linkHref = $('.sidebar .nav-link:nth('+i+')' ).attr('href');
-            console.log(htmlName, linkHref)
-            if(htmlName == linkHref){
-                $('.sidebar .nav-link:nth('+i+')' ).parent().addClass('active');
-                // 2단 매뉴 일 경우에만 아랫줄 추가
-                $('.sidebar .nav-link:nth('+i+')' ).parent().parent().addClass('active');
-                $('.sidebar .nav-link:nth('+i+')' ).parent().parent().show();
-            }
-        }
+    $(document).ready(function() {
+      //  makeListRow(dataList);
+        /* data Table */
+        $('.datatable').DataTable({
+            'responsive': true,
+            'searching': true,
+            paging: true,
+            "bLengthChange": true,
+            "pageLength": 10,
+            "columnDefs": [{
+                "targets": 5,
+                "orderable": true
+            }],
+            language: {
+                emptyTable: "데이터가 없습니다.",
+                lengthMenu: "페이지당 _MENU_ 개씩 보기",
+                info: "현재 _START_ - _END_ / _TOTAL_건",
+                infoEmpty: "데이터 없음",
+                infoFiltered: "( _MAX_건의 데이터에서 필터링됨 )",
+                search: "검색",
+                zeroRecords: "일치하는 데이터가 없습니다.",
+                loadingRecords: "로딩중...",
+                processing: "잠시만 기다려 주세요.",
+                paginate: {
+                    next: "다음",
+                    previous: "이전",
+                },
+            },
+        });
+
     });
 </script>
 <!-- Customized page level js ends -->

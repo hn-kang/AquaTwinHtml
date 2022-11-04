@@ -401,6 +401,25 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <script>
     'use strict'
     $(window).on('load', function(){
+        $("#my-dropzone").dropzone({
+            url: "../file-upload",
+            addRemoveLinks: "dictRemoveFile"
+        });
+
+        $('#fileInput').on('change', function(){
+            if($('#fileInput').val()){
+                $('#imageShow1').hide();
+                $('#imageShow2').show();
+            }
+        });
+        function editor2() {
+            /* classic CK Editor */
+            ClassicEditor
+                .create(document.querySelector('#editor2'))
+
+        }
+        editor2();
+
         // 선택 매뉴 active 표시
         $('.sidebar .nav-item' ).removeClass('active');
         let navLinkLength = $('.sidebar .nav-link' ).length;
@@ -413,8 +432,8 @@ License: You must have a valid license purchased only from maxartkiller.com in o
             if(htmlName == linkHref){
                 $('.sidebar .nav-link:nth('+i+')' ).parent().addClass('active');
                 // 2단 매뉴 일 경우에만 아랫줄 추가
-                $('.sidebar .nav-link:nth('+i+')' ).parent().parent().addClass('active');
-                $('.sidebar .nav-link:nth('+i+')' ).parent().parent().show();
+                $('.sidebar .nav-link:nth('+i+')' ).parent().parent().css('display', 'block');
+                $('.sidebar .nav-link:nth('+i+')' ).parent().parent().parent().addClass('show');
             }
         }
     });

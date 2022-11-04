@@ -412,6 +412,19 @@ License: You must have a valid license purchased only from maxartkiller.com in o
 <script>
     'use strict'
     $(window).on('load', function(){
+        $("#my-dropzone").dropzone({
+            url: "../file-upload",
+            addRemoveLinks: "dictRemoveFile"
+        });
+
+        $('#fileInput').on('change', function(){
+            if($('#fileInput').val()){
+                $('#imageShow1').hide();
+                $('#imageShow2').show();
+            }
+        });
+        editor2();
+
         // 선택 매뉴 active 표시
         $('.sidebar .nav-item' ).removeClass('active');
         let navLinkLength = $('.sidebar .nav-link' ).length;
@@ -429,6 +442,14 @@ License: You must have a valid license purchased only from maxartkiller.com in o
             }
         }
     });
+    function editor2() {
+        /* classic CK Editor */
+        ClassicEditor
+            .create(document.querySelector('#editor2'))
+    }
+    function delBtn(){
+        $('#fileNameDiv').html('');
+    }
 </script>
 <!-- Customized page level js ends -->
 </body>
