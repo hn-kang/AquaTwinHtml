@@ -137,61 +137,27 @@
 
 <!-- Logo sidebar -->
 <div class="sidebar">
-    <a href="" class="logo">
+    <a href="index.html" class="logo">
         <img src="../resources/assets/img/main/main_icon.png" alt="" class="logo-icon" style="width:205px;">
     </a>
     <!-- Logo sidebar ends -->
 
     <!-- Navigation menu sidebar-->
-    <h6 class="subtitle fs11">Navigation Menu</h6>
+    <h6 class="subtitle fs11">External Link</h6>
     <ul class="nav flex-column">
-        <li class="nav-item active">
-            <a class="nav-link"  href="index.html"><i class="material-icons icon">filter_none</i><span>Dashboard</span></a>
+        <li class="nav-item">
+            <button type="button" onclick="window.open('about:blank').location.href='https://aquatwin.bluedigm.com/login'" class="mb-2 shadow-sm mr-2 btn btn-primary btn-block"><i class="material-icons">insert_chart</i>&nbsp;&nbsp;수조 관측 데이터</button>
         </li>
         <li class="nav-item">
-            <a class="nav-link"><i class="material-icons icon">style</i><span>수조 1</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link"><i class="material-icons icon">web</i><span>수조 2</span></a>
+            <button type="button" onclick="window.open('about:blank').location.href='https://bdinc.tk/#/'" class="mb-2 shadow-sm mr-2 btn btn-primary btn-block"><i class="material-icons ml-2">phone_iphone</i>&nbsp;&nbsp;화상 안내 도우미</button>
         </li>
     </ul>
 
     <h6 class="subtitle fs11">Management</h6>
     <ul class="nav flex-column">
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">style</i><span>수조 관리</span> <i class="material-icons arrow">expand_more</i></a>
-            <div class="nav flex-column">
-                <div class="nav-item"><a class="nav-link" href="waterTankStatus.html"><span>수조 현황</span></a></div>
-                <div class="nav-item"><a class="nav-link" href="createWaterTank.html"><span>신규 수조 등록</span></a></div>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">style</i><span>어종 관리</span> <i class="material-icons arrow">expand_more</i></a>
-            <div class="nav flex-column">
-                <div class="nav-item"><a class="nav-link" href="fish.html"><span>어종 목록</span></a></div>
-                <div class="nav-item"><a class="nav-link" href="createFish.html"><span>신규 어종 등록</span></a></div>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">style</i><span>계측기 관리</span> <i class="material-icons arrow">expand_more</i></a>
-            <div class="nav flex-column">
-                <div class="nav-item"><a class="nav-link" href="measuringInstrument.html"><span>계측기 목록</span></a></div>
-                <div class="nav-item"><a class="nav-link" href="createMeasuringInstrument.html"><span>신규 계측기 등록</span></a></div>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-        <li class="nav-item">
-            <a class="nav-link" href="sensor.html"><i class="material-icons icon">web</i><span>센서 관리</span></a>
-        </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="fishJournal.html"><i class="material-icons icon">filter_none</i><span>어가 일지</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="fishMovement.html"><i class="material-icons icon">style</i><span>이동 관리</span></a>
-        </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">web</i><span>입·출하 폐사 관리</span> <i class="material-icons arrow">expand_more</i></a>
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">repeat</i><span>입·출하 폐사 관리</span> <i class="material-icons arrow">expand_more</i></a>
             <div class="nav flex-column">
                 <div class="nav-item"><a class="nav-link" href="fishInOutBoard.html"><span>입·출하 폐사 목록</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="createFishArrival.html"><span>입하 등록</span></a></div>
@@ -200,37 +166,67 @@
             </div>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="feed.html"><i class="material-icons icon">web</i><span>급이 관리</span></a>
+            <a class="nav-link" href="fishMovement.html"><i class="material-icons icon">reply</i><span>이동 관리</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="feedData.html"><i class="material-icons icon">web</i><span>사료 관리</span></a>
+            <a class="nav-link" href="fishJournal.html"><i class="material-icons icon">style</i><span>어가 일지</span></a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="feed.html"><i class="material-icons icon">local_dining</i><span>급이 관리</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="feedData.html"><i class="material-icons icon">restaurant</i><span>사료 관리</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="javascript:window.location.reload()"><i class="material-icons icon">group_add</i><span>회원 권한 관리(준비중)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="javascript:window.location.reload()"><i class="material-icons icon">monetization_on</i><span>매출 관리(준비중)</span></a>
+        </li>
+    </ul>
+    <h6 class="subtitle fs11">System Setting</h6>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="waterTankStatus.html"><i class="material-icons icon">wallpaper</i><span>수조 관리</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="measuringInstrument.html"><i class="material-icons icon">router</i><span>계측기 관리</span></a>
+        </li>
+
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">web</i><span>사업장·양식장 관리</span> <i class="material-icons arrow">expand_more</i></a>
+        <li class="nav-item">
+            <a class="nav-link" href="sensor.html"><i class="material-icons icon">settings_remote</i><span>센서 관리</span></a>
+        </li>
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link"><i class="material-icons icon">filter_none</i><span>알림 설정</span></a>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--            <a class="nav-link"><i class="material-icons icon">style</i><span>계정 설정</span></a>-->
+<!--        </li>-->
+    </ul>
+    <h6 class="subtitle fs11">Admin</h6>
+    <ul class="nav flex-column">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">supervisor_account</i><span>사업장·양식장 관리</span> <i class="material-icons arrow">expand_more</i></a>
             <div class="nav flex-column">
                 <div class="nav-item"><a class="nav-link" href="workplace.html"><span>사업장 관리</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="fishery.html"><span>양식장 관리</span></a></div>
             </div>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="javascript:window.location.reload()"><i class="material-icons icon">web</i><span>매출 관리(준비중)</span></a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">opacity</i><span>어종 관리</span> <i class="material-icons arrow">expand_more</i></a>
+            <div class="nav flex-column">
+                <div class="nav-item"><a class="nav-link" href="fish.html"><span>어종 목록</span></a></div>
+                <div class="nav-item"><a class="nav-link" href="createFish.html"><span>신규 어종 등록</span></a></div>
+            </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">web</i><span>게시판 관리</span> <i class="material-icons arrow">expand_more</i></a>
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)"><i class="material-icons icon">sms</i><span>게시판 관리</span> <i class="material-icons arrow">expand_more</i></a>
             <div class="nav flex-column">
                 <div class="nav-item"><a class="nav-link" href="notice.html"><span>공지 관리</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="news.html"><span>정보 관리</span></a></div>
                 <div class="nav-item"><a class="nav-link" href="reference.html"><span>자료 관리</span></a></div>
             </div>
-        </li>
-    </ul>
-    <h6 class="subtitle fs11">Setting</h6>
-    <ul class="nav flex-column">
-        <li class="nav-item">
-            <a class="nav-link"><i class="material-icons icon">filter_none</i><span>알림 설정</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link"><i class="material-icons icon">style</i><span>계정 설정</span></a>
         </li>
     </ul>
 </div>
@@ -340,45 +336,42 @@
                     <div class="row">
                         <!-- Submenu section starts -->
                         <nav class="navbar col-12 ">
-                            <div class="dropdown mr-auto d-flex d-sm-none">
-                                <button class="btn dropdown-toggle btn-sm btn-primary" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dashboard
+                            <div class="mr-auto d-flex d-sm-none">
+                                <button class="btn dropdown-toggle btn-sm btn-primary" onclick="window.open('about:blank').location.href='https://aquatwin.bluedigm.com/login'"  type="button"><i class="material-icons">insert_chart</i>
+                                    수조 관측 데이터
                                 </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Dashboard</a>
-                                    <a class="dropdown-item" href="#">수조 1</a>
-                                    <a class="dropdown-item" href="#">수조 2</a>
-                                </div>
+                                <button class="btn dropdown-toggle btn-sm btn-primary ml-3" onclick="window.open('about:blank').location.href='https://bdinc.tk/#/'"  type="button"><i class="material-icons">phone_iphone</i>
+                                    화상 안내 도우미
+                                </button>
                             </div>
+<!--                            <ul class="nav nav-pills mr-auto d-none d-sm-flex">-->
+<!--                                <li class="nav-item ">-->
+<!--                                    <a class="nav-link" href="#">Dashboard</a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a class="nav-link" href="#">Featured</a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a class="nav-link" href="#">popular</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                            <ul class="nav nav-pills ml-auto d-none d-xl-flex">-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a class="nav-link" href="#">Today</a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a class="nav-link" href="#">This week</a>-->
+<!--                                </li>-->
+<!--                                <li class="nav-item">-->
+<!--                                    <a class="nav-link" href="#">This Month</a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                            <form class="form-inline ml-auto ml-sm-3">-->
+<!--                                <div id="daterangeadminux" class="form-control form-control-sm">-->
+<!--                                    <span></span> <i class="material-icons avatar avatar-26 text-template-primary cal-icon">event</i>-->
+<!--                                </div>-->
 
-                            <ul class="nav nav-pills mr-auto d-none d-sm-flex">
-                                <li class="nav-item ">
-                                    <a class="nav-link" href="#">Dashboard</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Featured</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">popular</a>
-                                </li>
-                            </ul>
-                            <ul class="nav nav-pills ml-auto d-none d-xl-flex">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Today</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">This week</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">This Month</a>
-                                </li>
-                            </ul>
-                            <form class="form-inline ml-auto ml-sm-3">
-                                <div id="daterangeadminux" class="form-control form-control-sm">
-                                    <span></span> <i class="material-icons avatar avatar-26 text-template-primary cal-icon">event</i>
-                                </div>
-
-                            </form>
+<!--                            </form>-->
                         </nav>
                         <!-- Submenu section ends -->
                     </div>
@@ -1404,12 +1397,12 @@
                 </div>
                 <div class="col-12 col-md-auto text-center text-md-right">
                     <ul class="nav justify-content-center justify-md-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Terms of use</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Privacy Policy</a>
-                        </li>
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link active" href="#">Terms of use</a>-->
+<!--                        </li>-->
+<!--                        <li class="nav-item">-->
+<!--                            <a class="nav-link" href="#">Privacy Policy</a>-->
+<!--                        </li>-->
                         <li class="nav-item">
                             <a class="nav-link" href="contactus.html">Contact us</a>
                         </li>
